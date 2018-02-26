@@ -9,7 +9,7 @@ public class Formatting {
 
 		  Make sure it is a single String literal.
 		 */
-		System.out.println("\\\\His name was \"Robert Paulson.\" \nYou cry now. //");
+		System.out.println("\\\\ His name was \"Robert Paulson.\" \nYou cry now. //");
 	}
 
 }
