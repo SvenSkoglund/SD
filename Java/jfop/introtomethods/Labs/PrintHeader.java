@@ -1,14 +1,24 @@
 public class PrintHeader {
   public static void main (String [] args){
-    printTheHeader();
+
+    welcome();
 
 
   }
+  public static void welcome(){
+    printTopBorder();
+    printSideBorder();
+    printTheHeader();
+    printSideBorder();
+    printTopBorder();
+  }
   public static void printTheHeader(){
-    System.out.println("*****************");
-    System.out.println("*               *");
     System.out.println("*   Welcome!    *");
-    System.out.println("*               *");
+  }
+  public static void printTopBorder(){
     System.out.println("*****************");
+  }
+  public static void printSideBorder(){
+    System.out.println("*               *");
   }
 }
