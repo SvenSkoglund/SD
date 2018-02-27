@@ -20,6 +20,7 @@ public class Logical {
 		boolean isExpectedSalary = salary >= min && salary <= max;
 		// Add code to check if the salary is in the range of min and max and assign that value to isExpectedSalary
 		
+		
 		System.out.println("Is this salary what you expect for the position? " + isExpectedSalary);
 		
 		// Add code to check and output whether the salary is "dreamy," where dreamy means it is more than $10,000 greater than your max.
