@@ -8,6 +8,10 @@ public class HelloEclipse {
 		String name = input.next();
 		System.out.println("Hello " + name + "!");
 		input.close();
+		// TODO asdfa 
 		
 	}	
+	public static void sampleMethod() {
+		
+	}
 }
