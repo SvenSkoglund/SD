@@ -28,7 +28,12 @@ public class ForFun {
 	}
 	public static int cardFlip() {
 		int card = (int) (1+11*Math.random());
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Dealer flips a card and it is " + card);
+		if (card == 1 || card == 11 ) {
+			System.out.println("Would you like to count this card as 1 or 11?");
+			card = scanner.nextInt();
+		}
 		return card;
 	}
 	public static int playerTurn(int playerScore) {
