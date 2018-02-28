@@ -17,16 +17,16 @@ public class StringComparison {
 		// Run the program with a proper name.
 		
 		// Fix the code to no longer use `==`.
-		if(name == "Frodo") {
+		if(name.equals("Frodo")) {
 			System.out.println("And brave, too!");
 		}
-		else if(name == "Sam") {
+		else if(name.equals("Sam")) {
 			System.out.println("And so loyal!");
 		}
-		else if(name == "Merry") {
+		else if(name.equals("Merry")) {
 			System.out.println("Oh, a hungry one!");
 		}
-		else if(name == "Pippin") {
+		else if(name.equals("Pippin")) {
 			System.out.println("A sidekick, huh? At least you know rings.");
 		}
 		else {

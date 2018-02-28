@@ -29,8 +29,11 @@ public class SalaryDecisions3 {
 		}
 		else if(salary <= min - 5000) {
 			System.out.println("This salary is a joke.");
+		}else {
+			// this code executes if the offer is between 1 and 10000 dollars over
+			// or if it is between 1 and 4999 under
+			System.out.println("At least I got an offer.");
 		}
-		
 		sc.close();
 	}
 

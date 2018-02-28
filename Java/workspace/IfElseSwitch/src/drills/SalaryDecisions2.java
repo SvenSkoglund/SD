@@ -18,17 +18,18 @@ public class SalaryDecisions2 {
 		salary = sc.nextInt();
 		
 		boolean isAcceptableSal = false;
+		boolean isDreamy = salary > 10000 + max;
 		// TODO: Change this code to use "else if" statements for the other conditions 
 		isAcceptableSal = salary >= min && salary <= max;
 		if(isAcceptableSal == true) {
 			System.out.println("The salary is acceptable.");
-		}
-		boolean isDreamy = salary > 10000 + max;
-		if(isDreamy) {
+		}else if(isDreamy) {
 			System.out.println("The salary is more than $10000 over max");
 		}
-		if(salary <= min - 5000) {
+		else if(salary <= min - 5000) {
 			System.out.println("This salary is a joke.");
+		}else {
+			System.out.println("Salary is not acceptable, lets continue negotiation");
 		}
 		
 		// Note that there is a path through this code that does not result in any output

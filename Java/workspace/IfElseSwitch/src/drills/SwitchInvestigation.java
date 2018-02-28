@@ -18,8 +18,10 @@ public class SwitchInvestigation {
 
 		// 1. Comment out the break; statements for case "A" and "B".
 		//    Run the program. What output do you notice?
+		// without a break the case will execute and continue executing following cases without breaks until a case with a break is met
 		// 2. Move the entire default case before case "A":
 		//    Run the program. What output do you notice?
+		//if the default is met it will also execute the next case after it because it does not have a break
 		switch (grade) {
 		case "A":
 			System.out.println("Keep it up");

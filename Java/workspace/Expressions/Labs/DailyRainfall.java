@@ -5,40 +5,30 @@ public class DailyRainfall {
 
 	public static void main(String[] args) {
 
-		promptAndPrint();
-		
+		print(prompt());
+
 	}
 
-	public static void promptAndPrint() {
-		double monday, tuesday, wednesday, thursday, friday, saturday, sunday, average, total;
-		Scanner scanner = new Scanner(System.in);
+	public static double[] prompt() {
 
-		System.out.println("Enter the rainfall on Monday: ");
-		monday = scanner.nextDouble();
-		System.out.println("Enter the rainfall on Tuesday: ");
-		tuesday = scanner.nextDouble();
-		System.out.println("Enter the rainfall on Wednesday: ");
-		wednesday = scanner.nextDouble();
-		System.out.println("Enter the rainfall on Thursday: ");
-		thursday = scanner.nextDouble();
-		System.out.println("Enter the rainfall on Friday: ");
-		friday = scanner.nextDouble();
-		System.out.println("Enter the rainfall on Saturday: ");
-		saturday = scanner.nextDouble();
-		System.out.println("Enter the rainfall on Sunday: ");
-		sunday = scanner.nextDouble();
-		
-		total = monday + tuesday + wednesday + thursday + friday + saturday + sunday;
-		average = total / 7;
-		
-		System.out.println("Monday: " + monday);
-		System.out.println("Tuesday: " + tuesday);
-		System.out.println("Wednesday: " + wednesday);
-		System.out.println("Thursday: " + thursday);
-		System.out.println("Friday: " + friday);
-		System.out.println("Saturday: " + saturday);
-		System.out.println("Sunday: " + sunday);
+		double[] week = new double[7];
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 0; i < 7; i++) {
+			System.out.print("Enter the rainfall on Day " + (i + 1) + ": ");
+			week[i] = scanner.nextDouble();
+		}
+		return week;
+	}
+
+	public static void print(double[] week) {
+		double total = 0;
+
+		for (int i = 0; i < 7; i++) {
+			System.out.println("Day " + (i + 1) + ": " + week[i]);
+			total = total + week[i];
+		}
+
 		System.out.println("Total: " + total);
-		System.out.println("Average: " + average);
+		System.out.println("Average: " + (total / 7));
 	}
 }
