@@ -28,16 +28,16 @@ public class WhileLoopBreakContinue {
 		}
 		// Write a do-while loop that accepts an int from a user, and exits when the
 		// user types 0.
-		int num;
-		Scanner scan = new Scanner(System.in);
-		do {
-			System.out.print("Enter int numbers. Enter 0 to quit: ");
-			num = scan.nextInt();
-			System.out.println("You entered: " + num);
-		}
-		while (num != 0);
-		// Loop here...
-
+		 int num;
+		 Scanner scan = new Scanner(System.in);
+		 do {
+		 System.out.print("Enter int numbers. Enter 0 to quit: ");
+		 num = scan.nextInt();
+		 System.out.println("You entered: " + num);
+		 }
+		 while (num != 0);
+		 // Loop here...
+		
 		System.out.println("Finished");
 
 		// Write an infinite loop that accepts String values from the user.
@@ -45,6 +45,7 @@ public class WhileLoopBreakContinue {
 		// it to the screen.
 		// Hint: check if the user's input equals "quit" by using the
 		// if("quit".equals(YOUR_INPUT_VARIABLE)).
+		scan.nextLine();
 		String input;
 		while (true) {
 			System.out.println("Enter a word, 'quit' to exit.");
