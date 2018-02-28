@@ -12,6 +12,11 @@ public class WhileLoop {
 
   public static void printNumbers() {
     // Write a while loop to print the numbers 1 to 10 to the screen.
+	  int i = 1 ;
+	  while (i <= 10 ) {
+		  System.out.println(i);
+		  i++;
+	  }
   }
 
   public static void mathRandomWhile() {
@@ -20,6 +25,12 @@ public class WhileLoop {
     // Example: double d = Math.random();
     // Make sure to reassign d with a new Math.random() value in the loop body.
     // After the loop, add a statement to print the final value of d.
+	  
+	  double d = 0;
+	  while ( d < .7 ) {
+		  d = Math.random();
+		  System.out.println(d);
+	  }
   }
 
 }
