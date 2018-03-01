@@ -18,6 +18,8 @@ public class FibNum {
 //		5: 5
 //		6: 8
 //		7: 13
+		
+		
 		for (int i = 2; i <= 20; i++) {
 			fib = a + b;
 			a = b;
