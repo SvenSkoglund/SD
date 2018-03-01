@@ -13,6 +13,7 @@ public class ForLoopBody2 {
 			System.out.println(x + y);
 		}
 		
+		
 		// Loop 2
 		for (int a = 0, short b = 4; a < 5; a++, b++) {
 			System.out.println("a is " + a + ", b is " + b);
@@ -25,7 +26,17 @@ public class ForLoopBody2 {
 		System.out.println("q is now " + q);
 		 
 		 */
-		
+		for (int y = 0, x = 10; x + y < 15; x++, y++) {
+			System.out.println(x + y);
+		}
+		for (int a = 0, b = 4; a < 5; a++, b++) {
+			System.out.println("a is " + a + ", b is " + b);
+		}
+		int q;
+		for ( q = 5; q < 10; q++) {
+			System.out.println(q);
+		}
+		System.out.println("q is now " + q);
 		
 	}
 

@@ -57,7 +57,7 @@ public class LoopMenu {
 	}
 
 	public static void printWisdom() {
-		System.out.println("Wisdom comes from within, not from a menu3");
+		System.out.println("Wisdom comes from within, not from a menu");
 	}
 
 	public static void printHelp() {

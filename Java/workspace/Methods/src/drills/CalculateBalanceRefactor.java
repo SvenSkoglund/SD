@@ -8,19 +8,26 @@ public class CalculateBalanceRefactor {
 		double payment1 = 42.40;
 		balance = balance - payment1;
 
-		System.out.println("-----------------");
-		System.out.println("---- BALANCE ----");
-		System.out.println("-----------------");
+		printHeader(5);
 		System.out.println(balance);
 		System.out.println();
-
+		
 		double payment2 = 39.31;
 		balance = balance - payment2;
     
-		System.out.println("-----------------");
-		System.out.println("---- BALANCE ----");
-		System.out.println("-----------------");
+
+		printHeader(0);
 		System.out.println(balance);
 		System.out.println();
+	}
+	public static void printHeader(int prints) {
+		int j = 0;
+		while (j<prints) {
+		System.out.println("/////////////////");
+		System.out.println("//// BALANCE ////");
+		System.out.println("/////////////////");
+		j++;
+		}
+
 	}
 }
