@@ -9,7 +9,7 @@ public class FibNum {
 		int fib;
 		System.out.println("0: " + a);
 		System.out.println("1: " + b);
-//		
+	
 //		0: 0
 //		1: 1
 //		2: 1
@@ -18,7 +18,7 @@ public class FibNum {
 //		5: 5
 //		6: 8
 //		7: 13
-		for (int i = 2; i < 20; i++) {
+		for (int i = 2; i <= 20; i++) {
 			fib = a + b;
 			a = b;
 			b = fib;
