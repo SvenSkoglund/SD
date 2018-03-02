@@ -9,7 +9,7 @@ public class Promotion {
     int i    = 0;
     float f  = 1.0f;
 
-    float resultIF  = i * f;    // int*float promoted to float*float
+    int  resultIF  = i * f;    // int*float promoted to float*float
     double resultID = i * 2.0;  // int*double promoted to double*double
 
     char c = 'A';
