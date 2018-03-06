@@ -1,7 +1,8 @@
 package com.skilldistillery.objs.drills;
 public class Account {
-  public double balance;
-  public String accountId;
+
+private double balance;
+  private String accountId;
 
   public Account(String aId) {
     accountId = aId;
@@ -19,4 +20,20 @@ public class Account {
   public void withdraw(double amount) {
     balance = balance - amount;
   }
+//	Getters and Setters
+	double getBalance() {
+		return balance;
+	}
+
+	void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	String getAccountId() {
+		return accountId;
+	}
+
+	void setAccountId(String accountId) {
+		this.accountId = accountId;
+	}
 }

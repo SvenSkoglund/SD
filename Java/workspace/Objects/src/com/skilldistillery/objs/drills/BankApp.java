@@ -17,7 +17,7 @@ public class BankApp {
   }
   
   void printAccountData(Account account) {
-    System.out.println(account.accountId + " balance: " + account.balance);
+    System.out.println(account.getAccountId() + " balance: " + account.getBalance());
   }
 
 }

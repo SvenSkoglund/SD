@@ -13,7 +13,7 @@ public class InitClassProgram {
     InitClassTwo two = new InitClassTwo();
     
     // TODO: Create an instance of InitClassOne
-
+    InitClassOne oneTwo = new InitClassOne();
   }
   
 

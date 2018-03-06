@@ -1,4 +1,4 @@
-package com.skilldistillery.objs2.reference;
+package com.skilldistillery.objs2.labs;
 
 public class CarRepository {
   private Car[] cars;
