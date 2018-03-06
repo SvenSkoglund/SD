@@ -25,8 +25,11 @@ public class ForEach {
 
   static void forEachLoop1() {
     int[] intArr = { 10, 20, 30, 40 };
-    // foreach loop here
 
+    for (int num : intArr) {
+    	System.out.print(num + " ");
+    }
+    
     System.out.println("--end forEachLoop1");
   }
 
@@ -50,6 +53,10 @@ public class ForEach {
     strings[2] = "Third";
     strings[3] = "Fourth";
     // foreach loop here
+    
+    for (String s : strings) {
+    	System.out.print(s + " ");
+    }
 
     System.out.println("--end forEachLoop2");
   }
@@ -64,8 +71,10 @@ public class ForEach {
 
   static void forEachLoop3() {
     double doubleArr[] = { 1.1, 2.2, 3.3, 4.4 };
-    // foreach loop here
-
+    
+    for ( double d : doubleArr) {
+    	System.out.print(d + " ");
+    }
     System.out.println("--end forEachLoop3");
   }
 
