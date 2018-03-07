@@ -4,11 +4,7 @@ public class DataAnalyst extends Employee {
 	private String securityClearance;
 
 	public DataAnalyst(String sc, String firstName, String lastName, int age, String title, double salary) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.age = age;
-		this.setTitle(title);
-		this.setSalary(salary);
+		super(firstName,lastName,age,title,salary);
 		this.securityClearance = sc;
 	}
 
