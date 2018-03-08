@@ -15,9 +15,15 @@ public class StringBuilderLab {
     // Use only StringBuilder methods on sb to change the text to:
     // Hello, Java coding world! Always Be Coding!
     // Print out sb after each step.
-    
-    String result = sb.toString();
-    System.out.println(result);
+    sb.replace(10,11,"!");
+    System.out.println(sb.toString());
+    sb.insert(0, "Hello ");
+    System.out.println(sb.toString());
+    sb.insert(11,"coding ");
+    System.out.println(sb.toString());
+    sb.append(" Always Be Coding!");
+    System.out.println(sb.toString());
+
   }
 
 }

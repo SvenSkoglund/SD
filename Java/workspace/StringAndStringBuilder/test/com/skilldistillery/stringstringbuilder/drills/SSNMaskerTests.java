@@ -21,7 +21,7 @@ public class SSNMaskerTests {
 
   @Test
   public void test_maskSSN_returns_ssn_with_first_five_digits_masked_with_X() {
-    String ssn = "123-45-6789";
+    String ssn = "123-45-67891234";
     String masked = masker.maskSSN(ssn);
     String expected = "XXX-XX-6789";
     assertEquals(expected, masked);

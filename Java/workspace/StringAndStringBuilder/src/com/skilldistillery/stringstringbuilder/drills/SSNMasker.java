@@ -15,6 +15,7 @@ public class SSNMasker {
     
     // CODE HERE
     // use substring and concatenation to return a masked SSN.
+    maskedSSN = "XXX-XX-".concat(ssn.substring(7,11));
     
     return maskedSSN;
   }
