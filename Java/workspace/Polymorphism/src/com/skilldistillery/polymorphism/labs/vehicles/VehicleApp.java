@@ -1,9 +1,9 @@
 package com.skilldistillery.polymorphism.labs.vehicles;
 
-import com.skilldistillery.polymorphism.solutions.vehicles.Automobile;
-import com.skilldistillery.polymorphism.solutions.vehicles.Boat;
-import com.skilldistillery.polymorphism.solutions.vehicles.Truck;
-import com.skilldistillery.polymorphism.solutions.vehicles.Vehicle;
+//import com.skilldistillery.polymorphism.solutions.vehicles.Automobile;
+//import com.skilldistillery.polymorphism.solutions.vehicles.Boat;
+//import com.skilldistillery.polymorphism.solutions.vehicles.Truck;
+//import com.skilldistillery.polymorphism.solutions.vehicles.Vehicle;
 
 public class VehicleApp {
 
@@ -24,5 +24,8 @@ public class VehicleApp {
     
     
   }
-
+  private double calculateVehicleRegistration(Vehicle v) {
+	    // Call the vehicle's method with 0.05
+	    return v.calculateRegistrationFee(0.05);
+	  }
 }

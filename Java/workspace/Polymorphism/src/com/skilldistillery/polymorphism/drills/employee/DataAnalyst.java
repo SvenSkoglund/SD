@@ -27,4 +27,9 @@ public class DataAnalyst extends Employee {
   public String analyzeData(String data) {
     return data != null ? data.toUpperCase() : "Data is null";
   }
+
+  @Override
+  public void executeJob(String data) {
+	 System.out.println( analyzeData(data));
+  }
 }

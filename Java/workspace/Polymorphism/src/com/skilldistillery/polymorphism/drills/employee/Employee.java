@@ -33,6 +33,8 @@ public class Employee extends Person {
   public void setSalary(double salary) {
     this.salary = salary;
   }
-
+  public void executeJob(String data) {
+	  System.out.println("Doing Job: " + data);
+  }
   
 }

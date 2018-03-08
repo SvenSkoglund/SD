@@ -36,8 +36,8 @@ public class EmployeePrintingApp {
 	public void processEmployees(Employee[] employees) {
 		// loop through the Employee array and call printEmployeeNameAndTitle
 		// for each Employee
-		for (int i = 0 ; i < employees.length ; i++) {
-			printEmployeeNameAndTitle(employees[i]);
+		for (Employee employee : employees ) {
+			printEmployeeNameAndTitle(employee);
 		}
 	}
 

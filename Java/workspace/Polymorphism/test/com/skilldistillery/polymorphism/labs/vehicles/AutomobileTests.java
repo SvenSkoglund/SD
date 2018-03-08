@@ -21,8 +21,8 @@ public class AutomobileTests {
   }
 
 //  @Test
-//  public void test_calculateRegistrationFee_returns_rate_times_purchasePrice() {
-//    assertEquals(100.0, auto.calculateRegistrationFee(0.10), 0.001);
-//  }
+ public void test_calculateRegistrationFee_returns_rate_times_purchasePrice() {
+    assertEquals(100.0, auto.calculateRegistrationFee(0.10), 0.001);
+  }
 
 }

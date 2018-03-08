@@ -1,58 +1,72 @@
 package com.skilldistillery.polymorphism.labs.vehicles;
 
 public class Automobile extends Vehicle {
-  private String make;
-  private String model;
-  private int year;
-  private int numberOfWheels;
-  private double speedInMph;
+	private String make;
+	private String model;
+	private int year;
+	private int numberOfWheels;
+	private double speedInMph;
 
-  public Automobile(double purchasePrice, String make, String model, int year, int numberOfWheels, double speedInMph) {
-    super(purchasePrice);
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.numberOfWheels = numberOfWheels;
-    this.speedInMph = speedInMph;
-  }
-  
-  public String getMake() {
-    return make;
-  }
+	public Automobile(double purchasePrice, String make, String model, int year, int numberOfWheels,
+			double speedInMph) {
+		super(purchasePrice);
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.numberOfWheels = numberOfWheels;
+		this.speedInMph = speedInMph;
+	}
 
-  public void setMake(String make) {
-    this.make = make;
-  }
+	public String getMake() {
+		return make;
+	}
 
-  public String getModel() {
-    return model;
-  }
+	public void setMake(String make) {
+		this.make = make;
+	}
 
-  public void setModel(String model) {
-    this.model = model;
-  }
+	public String getModel() {
+		return model;
+	}
 
-  public int getYear() {
-    return year;
-  }
+	public void setModel(String model) {
+		this.model = model;
+	}
 
-  public void setYear(int year) {
-    this.year = year;
-  }
+	public int getYear() {
+		return year;
+	}
 
-  public int getNumberOfWheels() {
-    return numberOfWheels;
-  }
+	public void setYear(int year) {
+		this.year = year;
+	}
 
-  public void setNumberOfWheels(int numberOfWheels) {
-    this.numberOfWheels = numberOfWheels;
-  }
+	public int getNumberOfWheels() {
+		return numberOfWheels;
+	}
 
-  public double getSpeedInMph() {
-    return speedInMph;
-  }
+	public void setNumberOfWheels(int numberOfWheels) {
+		this.numberOfWheels = numberOfWheels;
+	}
 
-  public void setSpeedInMph(double speedInMph) {
-    this.speedInMph = speedInMph;
-  }
+	public double getSpeedInMph() {
+		return speedInMph;
+	}
+
+	public void setSpeedInMph(double speedInMph) {
+		this.speedInMph = speedInMph;
+	}
+
+	@Override
+	public String toString() {
+		return "Automobile [make=" + make + ", model=" + model + ", year=" + year + ", numberOfWheels=" + numberOfWheels
+				+ ", speedInMph=" + speedInMph + ", toString()=" + super.toString() + "]";
+	}
+
+	@Override
+	public double calculateRegistrationFee(double rate) {
+		double fee = rate * getPurchasePrice();
+		return fee;
+	}
+
 }

@@ -20,6 +20,9 @@ public class Vehicle {
   public String toString() {
     return "Vehicle [purchasePrice=" + purchasePrice + "]";
   }
+  public double calculateRegistrationFee(double rate) {
+	  return 0;
+  }
 
   
 }

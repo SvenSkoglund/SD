@@ -19,4 +19,8 @@ public class SoftwareDeveloper extends Employee {
     return super.getInfo();
   }
   
+  @Override
+  public void executeJob(String data) {
+	  System.out.println(produceSoftware());
+  }
 }
