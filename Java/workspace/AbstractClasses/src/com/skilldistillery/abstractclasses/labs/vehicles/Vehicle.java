@@ -1,6 +1,6 @@
 package com.skilldistillery.abstractclasses.labs.vehicles;
 
-public class Vehicle {
+public abstract class Vehicle {
   
   private double purchasePrice;
   
