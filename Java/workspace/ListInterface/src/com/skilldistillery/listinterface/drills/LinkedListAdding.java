@@ -16,7 +16,7 @@ public class LinkedListAdding {
   private void run() {
     // Run the program with ArrayList, and note the time taken.
     // Then change myList refer to a LinkedList, and run again.
-    List<Planet> myList = new ArrayList<>();
+    List<Planet> myList = new LinkedList<>();
     fillLargeList(myList);
   }
   

@@ -17,7 +17,7 @@ public class LinkedListPositionalAccess {
   private void run() { 
     // Run the program with ArrayList, and note the time taken.
     // Then change myList refer to a LinkedList, and run again.
-    List<Planet> list = new ArrayList<>();
+    List<Planet> list = new LinkedList<>();
     
     fillLargeList(list);
     
