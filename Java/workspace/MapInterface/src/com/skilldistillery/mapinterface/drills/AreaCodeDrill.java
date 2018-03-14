@@ -1,7 +1,9 @@
 package com.skilldistillery.mapinterface.drills;
 
-import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class AreaCodeDrill {
 
@@ -19,7 +21,7 @@ public class AreaCodeDrill {
   }
   
   private Map<Integer, String> generateMapData(){
-    Map<Integer, String> areaCodes = new HashMap<>();
+    Map<Integer, String> areaCodes = new TreeMap<>();
     // 3. Change areaCodes from a HashMap to a TreeMap and run the program.
     
     // 4. Change areaCodes to a LinkedHashMap and run the program.
@@ -40,6 +42,9 @@ public class AreaCodeDrill {
     //    504, "New Orleans"
     //    972, "Dallas"
     //    713, "Houston"
+    areaCodes.put(504, "New Orleans");
+    areaCodes.put(972, "Dalls");
+    areaCodes.put(713, "Houston");
     
     return areaCodes;
   }
@@ -47,5 +52,10 @@ public class AreaCodeDrill {
   private void outputMapData(Map<Integer, String> map) {
     // 2. Iterate through the map and output each key-value pair to the screen.
     //    Then run the program to see a HashMap's output.
+	  Iterator <Integer> it = map.keySet().iterator();
+	  while(it.hasNext()) {
+		  Integer code = it.next();
+		  System.out.println(code + "\t\t"+map.get(code));
+	  }
   }
 }

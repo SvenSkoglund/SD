@@ -1,7 +1,7 @@
 package com.skilldistillery.setinterface.examples;
 
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetTest {
@@ -17,13 +17,15 @@ public class SetTest {
     Album al3 = new Album(3, "AC/DC", "Let There Be Rock");
     Album al4 = new Album(3, "AC/DC", "Let There Be Rock");
     
-    Set<Album> albumCollection = new HashSet<>();
+//    Set<Album> albumCollection = new LinkedHashSet<>();
+    Set<Album> albumCollection = new LinkedHashSet<>();
     
     // Add all Albums
-    albumCollection.add(al1);
-    albumCollection.add(al2);
-    albumCollection.add(al3);
-    albumCollection.add(al4);  // duplicate Album
+   System.out.println(albumCollection.add(al1));
+   System.out.println(albumCollection.add(al2));
+   System.out.println(albumCollection.add(al3));
+   System.out.println(albumCollection.add(al4));
+ // duplicate Album
     
     printAlbums(albumCollection);
   }
