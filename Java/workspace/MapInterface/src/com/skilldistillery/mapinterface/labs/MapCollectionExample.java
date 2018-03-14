@@ -40,6 +40,9 @@ public class MapCollectionExample {
 			map.get(line.charAt(0)).add(line);
 
 		}
-		System.out.println(map);
+		for ( char i = 'A' ; i <= 'Z' ; i++) {
+			System.out.println(i + " -> " + map.get(i));
+		}
+		//System.out.println(map);
 	}
 }
