@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.skilldistillery.exceptionsjunit.reference.Calculator;
+import com.skilldistillery.exceptionsjunit.labs.Calculator;
 
 public class CalculatorTests {
   private Calculator calc;

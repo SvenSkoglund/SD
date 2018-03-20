@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
 import com.skilldistillery.regex.solutions.Pet;
 
 public class AddressParser {
@@ -21,7 +23,7 @@ public class AddressParser {
   private void listZipsAndAreaCodes(String fileName) {
     // 13002 N Pennsylvania Avenue, Oklahoma City, OK 73120 <br />405-936-4264
     // 999 E. Basse Rd. San Antonio, TX 78209 <br />(210) 824-1603
-    String regex = "\\b[A-Z]{2}\\b\\s+\\d{5}.*?/>\\s*\\(?\\d{3}\\b";
+    String regex = "\\b([A-Z]{2})\\b\\s+(\\d{5}).*?/>\\s*\\(?(\\d{3})\\b";
     Pattern p = Pattern.compile(regex);
     Matcher m = p.matcher("");
     try {
@@ -31,7 +33,9 @@ public class AddressParser {
         m.reset(line);
         
         // See if the regex matches the line.
-        
+        if (m.find()) {
+        	System.out.println("State Abbreviation: " + m.group(1 )+ " ZIP: " + m.group(2) + " Area Code: " + m.group(3));
+        }
         // If so, print the line
         
       }

@@ -32,7 +32,7 @@ public class AccountTests {
     Account a = new Account(100.0);
     try {
       a.withdrawException(50.0);
-      assertEquals(50.0, a.getBalance(), 0.01);
+      assertEquals(50.0, a.getBalance(),.01);
     }
     catch (Exception e) {
       fail(e.toString());

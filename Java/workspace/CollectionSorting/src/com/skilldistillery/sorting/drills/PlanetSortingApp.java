@@ -1,8 +1,8 @@
 package com.skilldistillery.sorting.drills;
 
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class PlanetSortingApp {
 
@@ -12,7 +12,8 @@ public class PlanetSortingApp {
   }
 
   private void launch() {
-    Set<Planet> planets = new HashSet<>();
+//    Set<Planet> planets = new HashSet<>();
+    Set<Planet> planets = new TreeSet<>();
     
     planets.add(new Planet("Earth", 149_600_000, 12_756));
     planets.add(new Planet("Jupiter", 778_330_000, 142_984));

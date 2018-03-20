@@ -1,10 +1,12 @@
 package com.skilldistillery.datesandtimes.labs;
 
+import java.time.LocalDate;
+
 public class USState {
   private String abbreviation;
   private String name;
   private String capital;
-  private String admissionDate;
+  private LocalDate admissionDate;
   private int population;
 
   public String getAbbreviation() {
@@ -31,11 +33,11 @@ public class USState {
     this.capital = capital;
   }
 
-  public String getAdmissionDate() {
+  public LocalDate getAdmissionDate() {
     return admissionDate;
   }
 
-  public void setAdmissionDate(String admissionDate) {
+  public void setAdmissionDate(LocalDate admissionDate) {
     this.admissionDate = admissionDate;
   }
 
@@ -50,7 +52,7 @@ public class USState {
   public USState() {
   }
 
-  public USState(String abbreviation, String name, String capital, String admissionDate, int population) {
+  public USState(String abbreviation, String name, String capital, LocalDate admissionDate, int population) {
     super();
     this.abbreviation = abbreviation;
     this.name = name;
