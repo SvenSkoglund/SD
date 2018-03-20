@@ -22,7 +22,7 @@ public class President implements Comparable<President> {
 		this.middleName = middleName;
 		this.lastName = lastName;
 		this.termBegin = termBegin;
-		if (termEnd != LocalDate.now()) {
+		if (termEnd != LocalDate.now()) 
 		this.termEnd = termEnd;
 		this.electionsWon = electionsWon;
 		this.whyLeftOffice = reasonLeftOffice;

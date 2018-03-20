@@ -3,10 +3,10 @@ package com.skilldistillery.innerclasses.labs;
 import java.util.Comparator;
 import java.util.Map;
 
-public class AccessLogComparator implements Comparator<String> {
+public class AccessLogComparatorOld implements Comparator<String> {
   private Map<String, Integer> visitors;
 
-  public AccessLogComparator(Map<String, Integer> v) {
+  public AccessLogComparatorOld(Map<String, Integer> v) {
     visitors = v;
   }
 

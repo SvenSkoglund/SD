@@ -8,8 +8,19 @@ public class PrintSortedPlanetsLocal {
 
   public void printPlanets() {
     // Change this class to use a local class, rather than a member class
-    Set<Planet> planets = new TreeSet<>(new PlanetComparator());
+    
+    class PlanetComparator implements Comparator<Planet> {
+        public int compare(Planet a, Planet b) {
+          if (a.getDiameter() < b.getDiameter())
+            return -1;
+          else if (a.getDiameter() > b.getDiameter())
+            return 1;
+          else
+            return a.getName().compareTo(b.getName());
+        }
+      }
 
+    Set<Planet> planets = new TreeSet<>(new PlanetComparator());
     planets.add(new Planet("Mercury", 57_910_000, 4_880));
     planets.add(new Planet("Venus", 108_200_000, 12_103));
     planets.add(new Planet("Earth", 149_600_000, 12_756));
@@ -24,16 +35,7 @@ public class PrintSortedPlanetsLocal {
     }
   }
 
-  private class PlanetComparator implements Comparator<Planet> {
-    public int compare(Planet a, Planet b) {
-      if (a.getDiameter() < b.getDiameter())
-        return -1;
-      else if (a.getDiameter() > b.getDiameter())
-        return 1;
-      else
-        return a.getName().compareTo(b.getName());
-    }
-  }
+ 
 
   public static void main(String[] args) {
     PrintSortedPlanetsLocal p = new PrintSortedPlanetsLocal();
