@@ -2,20 +2,23 @@ package com.skilldistillery.history;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class PresidentAppInnerClasses {
 	private static final String fileName = "resources" + File.separator + "presidents.tsv";
 	private List<President> presidents = new ArrayList<>();
+	private String dateFormat = "MMM dd, yyyy";
 
 	public static void main(String[] args) {
 		PresidentAppInnerClasses app = new PresidentAppInnerClasses();
@@ -23,29 +26,107 @@ public class PresidentAppInnerClasses {
 	}
 
 	public void start() {
-		class PresidentWhyLeftMatcher implements PresidentMatcher {
+
+		class WhyLeftOffice implements PresidentMatcher {
 
 			@Override
 			public boolean matches(President pres, String string) {
-			    return pres.getWhyLeftOffice().equals(string);
+
+				return pres.getWhyLeftOffice().equalsIgnoreCase(string);
 			}
-			
+
 		}
-		// sortByPartyAndTerm(presidents);
-//		List <President> filtered = filter("G", new PresidentFirstNameMatcher());
-		List <President> filtered = filter("Term ended", new PresidentWhyLeftMatcher());
-		List <President> anonFiltered = filter("Term ended", new 	 PresidentMatcher() {
+
+		this.printPresidents(this.getPresidents());
+
+		List<President> byPartyAndTerm = sortByPartyAndTerm(presidents);
+		System.out.println("***** By Party And Term *****");
+		printPresidents(byPartyAndTerm);
+
+		List<President> byReasonLeftOfficeAndTerm = sortByReasonLeftTerm(presidents);
+		System.out.println("***** By Reason And Term *****");
+		printPresidents(byReasonLeftOfficeAndTerm);
+
+		System.out.println("***** By Last Name *****");
+		printPresidents(sortByLastName(presidents));
+
+		System.out.println("***** By Whigs *****");
+		printPresidents(filter("Whig", new PresidentPartyMatcher()));
+
+		System.out.println("***** President First Name Starts With *****");
+		printPresidents(filter("J", new PresidentFirstNameMatcher()));
+
+		System.out.println("***** Why Left Office *****");
+		printPresidents(filter("Term Ended", new WhyLeftOffice()));
+
+		System.out.println("***** Last Name Starts With C *****");
+		printPresidents(filter("C", new PresidentMatcher() {
 
 			@Override
 			public boolean matches(President pres, String string) {
-			    return pres.getWhyLeftOffice().equals(string);
+				return pres.getLastName().startsWith(string);
 			}
-			
-		};
-		
-		this.printPresidents(filtered);
-//		this.printPresidents(sortByLastName(presidents));
 
+		}));
+
+		System.out.println("***** Party Contains Democrat *****");
+		printPresidents(filter("Democrat", new PresidentMatcher() {
+
+			@Override
+			public boolean matches(President pres, String string) {
+				return pres.getParty().contains(string);
+			}
+
+		}));
+
+		System.out.println("***** Died In Office *****");
+		printPresidents(filter("Died in office", new PresidentMatcher() {
+			@Override
+			public boolean matches(President pres, String string) {
+				return pres.getWhyLeftOffice().equalsIgnoreCase(string);
+			}
+
+		}));
+
+		System.out.println("***** Won Single Election *****");
+		Integer i = 1;
+		printPresidents(filter(i.toString(), new PresidentMatcher() {
+			@Override
+			public boolean matches(President pres, String string) {
+				Integer electionsWon = pres.getElectionsWon();
+				return electionsWon.toString().equalsIgnoreCase(string);
+			}
+		}));
+
+		System.out.println("***** 19th Century Terms *****");
+		printPresidents(filter("18", new PresidentMatcher() {
+
+			@Override
+			public boolean matches(President pres, String string) {
+				String startDate = pres.getTermStart().toString();
+				if (startDate.startsWith(string)) {
+					return true;
+				}
+				return false;
+			}
+
+		}));
+
+		copyToFile("presidentsAlt.tsv", presidents);
+
+	}
+
+	public void copyToFile(String fileName, List<President> presidents) {
+		try {
+			FileWriter fs = new FileWriter(fileName);
+			PrintWriter ps = new PrintWriter(fs);
+			for (President line : presidents) {
+				ps.println(line);
+			}
+			ps.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public PresidentAppInnerClasses() {
@@ -72,131 +153,160 @@ public class PresidentAppInnerClasses {
 		return filtered;
 	}
 
-	class PresidentFirstNameMatcher implements PresidentMatcher {
-
-		@Override
-		public boolean matches(President pres, String string) {
-			return pres.getFirstName().startsWith(string);
-		}
-
-	}
-
-	public List<President> sortByLastName(List<President> presidents) {
-		List sorted = new ArrayList<>(presidents);
-		sorted.sort(new Comparator<President>() {
-
-			@Override
-			public int compare(President o1, President o2) {
-
-				int retval = o1.getLastName().compareTo(o2.getLastName());
-
-				// shorthand syntax
-				return retval;
-			}
-
-		});
-		System.out.println(sorted);
-		return sorted;
-
-	}
-
-	// Create a method that returns a list of presidents sorted by the reason they
-	// left office, then by term number. Use a local class for the comparator. Pass
-	// the original list to this method, and print the resulting list.
-	public List<President> sortByReasonLeftAndTerm(List<President> presidents) {
-		List sorted = new ArrayList<>(presidents);
-		class CompareReasonLeftAndTerm implements Comparator<President> {
-
-			@Override
-			public int compare(President o1, President o2) {
-
-				int retval = o1.getWhyLeftOffice().compareTo(o2.getWhyLeftOffice());
-
-				// shorthand syntax
-				return (retval != 0) ? retval : o1.getTermNumber() - o2.getTermNumber();
-			}
-
-		}
-		sorted.sort(new CompareReasonLeftAndTerm());
-		System.out.println(sorted);
-		return sorted;
-
-	}
-
-	public class ComparePartyAndTerm implements Comparator<President> {
-
-		@Override
-		public int compare(President o1, President o2) {
-
-			int retval = o1.getParty().compareTo(o2.getParty());
-
-			// shorthand syntax
-			return (retval != 0) ? retval : o1.getTermNumber() - o2.getTermNumber();
-		}
-
-	};
-
-	// Create a method that returns a list of presidents sorted by party and term
-	// number. Use a member class that implements Comparator<President>. Pass the
-	// original list to this method, and print the resulting list.
-	public List<President> sortByPartyAndTerm(List<President> presidents) {
-		List sorted = new ArrayList<>(presidents);
-		sorted.sort(new ComparePartyAndTerm());
-		System.out.println(sorted);
-		return sorted;
-
-	}
-
 	private void loadPresidents(String fileName) {
 		// File format (tab-separated):
 		// # First Middle Last Inaugurated Left office Elections won Reason left office
 		// Party
 		// 1 George Washington July 1, 1789 March 4, 1797 2 Did not seek re-election
 		// Independent
-		DateTimeFormatter dateFmt = DateTimeFormatter.ofPattern("MMMM d, yyyy");
 		try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 			String record = reader.readLine(); // Read and discard header line
 			while ((record = reader.readLine()) != null) {
 				String[] col = record.split("\\t");
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy");
 
 				int term = Integer.parseInt(col[0]);
 				String fName = col[1];
 				String mName = col[2];
 				String lName = col[3];
-				String termBeginString = col[4];// : Date term began.
-				String termEndString = col[5];// Date term ended.
-				LocalDate termBegin = LocalDate.parse(termBeginString, dateFmt);
-				LocalDate termEnd = null;
+				LocalDate termStart;
 				try {
-					termEnd = LocalDate.parse(termEndString, dateFmt);
+					termStart = LocalDate.parse(col[4], formatter);
+				} catch (DateTimeParseException e) {
+					termStart = null;
 				}
-				catch (DateTimeParseException e) {
-					// TODO Auto-generated catch block
-					termEnd = LocalDate.now();
+				LocalDate termEnd;
+				try {
+					termEnd = LocalDate.parse(col[5], formatter);
+				} catch (DateTimeParseException e) {
+					termEnd = null;
 				}
 				int won = Integer.parseInt(col[6]);
 				String whyLeft = col[7];
 				String party = col[8];
 
-				President pres = new President(term, fName, mName, lName, termBegin, termEnd, won, whyLeft, party);
+				// LocalDate st = LocalDate.parse(termStart, formatter);
+				// LocalDate end = LocalDate.parse(termEnd, formatter);
+
+				President pres = new President(term, fName, mName, lName, termStart, termEnd, won, whyLeft, party);
 				presidents.add(pres);
-				try (PrintWriter pw = new PrintWriter(new PrintStream("presidents2.txt"))) {
-					for (President p : presidents) {
-						pw.println(p.getTermNumber() + "\t" + p.getFirstName() + "\t" + p.getMiddleName() + "\t"
-								+ p.getLastName() + "\t" + p.getTermBegin() + "\t" + p.getTermEnd() + "\t"
-								+ p.getElectionsWon() + "\t" + p.getWhyLeftOffice() + "\t" + p.getParty());
-					}
-				}
-				catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
 			}
-		}
-		catch (IOException ioe) {
+		} catch (IOException ioe) {
 			ioe.printStackTrace();
 			System.exit(1);
 		}
+	}
+
+	public List<President> sortByPartyAndTerm(List<President> presidents) {
+		List<President> sorted = new ArrayList<>(presidents);
+		PartyAndTermComparator p = new PartyAndTermComparator();
+		Collections.sort(sorted, p);
+
+		return sorted;
+	}
+
+	public List<President> sortByReasonLeftTerm(List<President> presidents) {
+		List<President> sorted = presidents;
+		class CompareReasonLeftAndTerm implements Comparator<President> {
+
+			@Override
+			public int compare(President o1, President o2) {
+				// TODO Auto-generated method stub
+				String o1Party = o1.getWhyLeftOffice();
+				String o2Party = o2.getWhyLeftOffice();
+				int result = o1Party.compareTo(o2Party);
+
+				int r = 0;
+				if (result != 0) {
+					return result;
+				}
+				if (result == 0) {
+					int o1Term = o1.getTermNumber();
+					int o2Term = o2.getTermNumber();
+					if (o1Term < o2Term) {
+						r = -1;
+					} else if (o1Term == o2Term) {
+						r = 0;
+					} else {
+						r = 1;
+					}
+				}
+				return r;
+			}
+
+		}
+		sorted.sort(new CompareReasonLeftAndTerm());
+		return sorted;
+	}
+
+	public List<President> sortByLastName(List<President> presidents) {
+		List<President> sorted = presidents;
+
+		sorted.sort(new Comparator<President>() {
+
+			@Override
+			public int compare(President o1, President o2) {
+				// TODO Auto-generated method stub
+				String o1Party = o1.getLastName();
+				String o2Party = o2.getLastName();
+				int result = o1Party.compareTo(o2Party);
+
+				int r = 0;
+				if (result != 0) {
+					return result;
+				}
+				if (result == 0) {
+					int o1Term = o1.getTermNumber();
+					int o2Term = o2.getTermNumber();
+					if (o1Term < o2Term) {
+						r = -1;
+					} else if (o1Term == o2Term) {
+						r = 0;
+					} else {
+						r = 1;
+					}
+				}
+				return r;
+			}
+
+		});
+		return sorted;
+	}
+
+	class PresidentFirstNameMatcher implements PresidentMatcher {
+
+		@Override
+		public boolean matches(President pres, String string) {
+
+			return pres.getFirstName().startsWith(string);
+		}
+
+	}
+
+	class PartyAndTermComparator implements Comparator<President> {
+
+		@Override
+		public int compare(President o1, President o2) {
+			// TODO Auto-generated method stub
+			String o1Party = o1.getParty();
+			String o2Party = o2.getParty();
+			int result = o1Party.compareTo(o2Party);
+
+			int r = 0;
+			if (result == 0) {
+				int o1Term = o1.getTermNumber();
+				int o2Term = o2.getTermNumber();
+				if (o1Term < o2Term) {
+					r = -1;
+				} else if (o1Term == o2Term) {
+					r = 0;
+				} else {
+					r = 1;
+				}
+			}
+			return r;
+		}
+
 	}
 
 }

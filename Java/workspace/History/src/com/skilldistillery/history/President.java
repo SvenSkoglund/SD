@@ -1,7 +1,6 @@
 package com.skilldistillery.history;
 
 import java.time.LocalDate;
-import java.time.Period;
 
 public class President implements Comparable<President> {
 	private int termNumber;
@@ -11,38 +10,21 @@ public class President implements Comparable<President> {
 	private int electionsWon;
 	private String whyLeftOffice;
 	private String party;
-	private LocalDate termBegin;
+	private LocalDate termStart;
 	private LocalDate termEnd;
 
-	public President(int termNumber, String firstName, String middleName, String lastName, LocalDate termBegin,
+	public President(int termNumber, String firstName, String middleName, String lastName, LocalDate termStart,
 			LocalDate termEnd, int electionsWon, String reasonLeftOffice, String party) {
 		super();
 		this.termNumber = termNumber;
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
-		this.termBegin = termBegin;
-		if (termEnd != LocalDate.now()) 
+		this.termStart = termStart;
 		this.termEnd = termEnd;
 		this.electionsWon = electionsWon;
 		this.whyLeftOffice = reasonLeftOffice;
 		this.party = party;
-	}
-
-	public LocalDate getTermBegin() {
-		return termBegin;
-	}
-
-	public void setTermBegin(LocalDate termBegin) {
-		this.termBegin = termBegin;
-	}
-
-	public LocalDate getTermEnd() {
-		return termEnd;
-	}
-
-	public void setTermEnd(LocalDate termEnd) {
-		this.termEnd = termEnd;
 	}
 
 	public int getTermNumber() {
@@ -76,6 +58,22 @@ public class President implements Comparable<President> {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
+	public LocalDate getTermStart() {
+		return termStart;
+	}
+	
+	public void setTermStart(LocalDate termStart) {
+		this.termStart = termStart;
+	}
+	
+	public LocalDate getTermEnd() {
+		return termEnd;
+	}
+	
+	public void setTermEnd(LocalDate termEnd) {
+		this.termEnd = termEnd;
+	}
 
 	public int getElectionsWon() {
 		return electionsWon;
@@ -104,38 +102,29 @@ public class President implements Comparable<President> {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append(termNumber + ": ");
-		builder.append(firstName + " ");
+		builder.append(termNumber + "\t");
+		builder.append(firstName + "\t");
 		if (middleName.length() > 0) {
-			builder.append(middleName + " ");
+			builder.append(middleName + "\t");
 		}
-		builder.append(lastName + " ");
-		builder.append(", termBegin=");
-		builder.append(termBegin + " ");
-		builder.append(", termEnd=");
-		builder.append(termEnd + " ");		
-		builder.append(" (" + party + ")");
-		builder.append(", electionsWon=");
+		builder.append(lastName);
+		builder.append("\t");
+		builder.append(termStart);
+		builder.append("\t");
+		builder.append(termEnd);
+		builder.append("\t" + party);
+		builder.append("\t");
 		builder.append(electionsWon);
-		builder.append(", whyLeftOffice=");
+		builder.append("\t");
 		builder.append(whyLeftOffice);
-		builder.append(", timeInOffice=");
-		builder.append(getLengthInOffice() + " months");
-		
 		return builder.toString();
 	}
 
-	public long getLengthInOffice() {
-		Period lengthInOffice;
-		lengthInOffice = Period.between(this.termBegin, this.termEnd);
-		return lengthInOffice.toTotalMonths();
-	}
 	@Override
 	public int compareTo(President other) {
 		if (this.termNumber > other.termNumber) {
 			return 1;
-		}
-		else if (this.termNumber < other.termNumber) {
+		} else if (this.termNumber < other.termNumber) {
 			return -1;
 		}
 		return 0;
