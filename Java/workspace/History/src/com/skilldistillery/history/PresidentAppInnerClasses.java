@@ -26,7 +26,7 @@ public class PresidentAppInnerClasses {
 	}
 
 	public void start() {
-
+		BiPredicate <President, String> bp
 		class WhyLeftOffice implements PresidentMatcher {
 
 			@Override

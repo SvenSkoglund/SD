@@ -67,7 +67,8 @@ public class LambdaExamples {
 		StringBuilder n =new StringBuilder(""); 
 		n.append(p.getFirstName() + " " + p.getLastName());
 		for ( int j = 0; j < n.length() ; j++) {
-			if (n.charAt(j) == 'a' || n.charAt(j) == 'e' ||n.charAt(j) == 'i' ||n.charAt(j) == 'o' ||n.charAt(j) == 'u' ||n.charAt(j) == 'A' ||n.charAt(j) == 'E' ||n.charAt(j) == 'I' ||n.charAt(j) == 'O' ||n.charAt(j) == 'U') {
+			if (n.charAt(j) == 'a' || n.charAt(j) == 'e' ||n.charAt(j) == 'i' ||n.charAt(j) == 'o' ||n.charAt(j) == 'u' ||
+				n.charAt(j) == 'A' ||n.charAt(j) == 'E' ||n.charAt(j) == 'I' ||n.charAt(j) == 'O' ||n.charAt(j) == 'U') {
 				n.replace(j, j+1, i.toString());
 				i++;
 			}
