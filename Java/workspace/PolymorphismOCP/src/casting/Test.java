@@ -1,5 +1,8 @@
 package casting;
 
+import poly.Animal;
+import poly.Bird;
+
 public class Test {
 	public static void main(String[] args) {
 		//instantiate objects
@@ -44,7 +47,7 @@ public class Test {
 			*/
 
 		String s = "Andrew";
-		a = (Animal)s;  // doesn't compile
+//		a = (Animal)s;  // doesn't compile
 
 	}
 }

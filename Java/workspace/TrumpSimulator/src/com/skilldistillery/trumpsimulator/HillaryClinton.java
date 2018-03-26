@@ -7,8 +7,14 @@ public class HillaryClinton extends Obstacle {
 	public void printEncounterMessage() {
 		encounterMessage = "But old foes can return anew...\n\nHillary Clinton is back, and she still wants to be president!";
 		System.out.println(encounterMessage);
+		int x = 100;
+		long y = x;
+		double z = x;
+		String x = false;
+		x = x++;
 	}
 	
+
 	public HillaryClinton(int ar) {
 		this.har = ar - 10;
 	}
