@@ -52,6 +52,10 @@ public class OverloadedMethod {
 		i = i + i;
 		return i;
 	}
+	
+	int doubler(Integer i) {
+		i = i + i;
+	}
 
 	double doubler(double d) {
 		d = d + d;

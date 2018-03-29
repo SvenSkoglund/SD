@@ -9,6 +9,7 @@ public class CastingTest {
 		Comparable c = s; //Works because String implements Comparable
 		
 		System.out.println(s.toLowerCase());
+		System.out.println(c.toLowerCase());
 		// Try using the Comparable reference to call c.toLowerCase().
 		
 		
