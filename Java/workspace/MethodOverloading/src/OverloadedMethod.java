@@ -8,8 +8,13 @@ public class OverloadedMethod {
 		olm.run();
 	}
 
-	
 	void run() {
+		
+		int [] ar = new int[5];
+		ar[1]=5;
+		Object st = (Object) new String("Text");
+		double f = 10000.0;
+		System.out.println(st);
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Would you like to double a");
 		System.out.println("1: String");
@@ -41,6 +46,11 @@ public class OverloadedMethod {
 			System.out.println("Doubled: " + doubler(c));
 			break;
 		}
+
+		//
+		// System.out.println(true + null);
+		// System.out.println(null + true);
+		// System.out.println(null + null);
 	}
 
 	String doubler(String s) {
@@ -52,9 +62,10 @@ public class OverloadedMethod {
 		i = i + i;
 		return i;
 	}
-	
+
 	int doubler(Integer i) {
 		i = i + i;
+		return i;
 	}
 
 	double doubler(double d) {
