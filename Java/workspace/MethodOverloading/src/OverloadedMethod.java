@@ -9,12 +9,7 @@ public class OverloadedMethod {
 	}
 
 	void run() {
-		
-		int [] ar = new int[5];
-		ar[1]=5;
-		Object st = (Object) new String("Text");
-		double f = 10000.0;
-		System.out.println(st);
+
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Would you like to double a");
 		System.out.println("1: String");
