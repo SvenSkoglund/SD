@@ -1,0 +1,86 @@
+* {
+color: lime;
+  background-color: black;
+  font-family: cursive;
+}
+*:hover{
+  color: white;
+}
+h1 > em > strong {
+    position:fixed;
+}
+li {
+  color: orange;
+  border-width: thick;
+  border-color: hotpink;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+#xyz {
+font-size: 40px;
+color: purple;
+}
+#hw1 {
+  left:400px;
+  top: 400px;
+  position: fixed;
+}
+#hw2 {
+  left:200px;
+  top: 300px;
+  position: fixed;
+}
+#hw3 {
+  left:400px;
+  top: 100px;
+  position: fixed;
+}
+h1, h2, h3 {
+  text-decoration: line-through;
+  color: hotpink;
+  background-color: black;
+}
+#div1 {
+  background-color: cyan;
+}
+#div2 {
+  background-color: orange;
+  left: 40px;
+  top: 30px;
+  position:relative;
+
+}
+div>h5 {
+  background: darkgrey;
+  color: white;
+  left: 40;
+  top: 30;
+  position: relative;
+
+}
+section#stuff {
+  color: white;
+  background-color: white;
+  padding: 20px;
+position: absolute;
+}
+hr {
+  background-color: hotpink;
+  margin: 20px;
+
+  border-width: thick;
+  border-color: lime;
+  padding: 20px;
+
+  color:lime;
+}
+div {
+  border: 12px solid orange;
+}
+img {
+  width: auto;
+  padding: 30px;
+  border: 1px solid hotpink;
+  border-width: thick;
+  background-color:lime;
+}

@@ -1,0 +1,7 @@
+div.three-col > div.row > div.col:first-child, .leftbar {
+  background-color: #f2f2f2;
+}
+
+div.three-col > div.row > div.col:last-child, .rightbar {
+  background-color: #b3b3b3;
+}
