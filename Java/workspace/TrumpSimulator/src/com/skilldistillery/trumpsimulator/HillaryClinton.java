@@ -10,8 +10,8 @@ public class HillaryClinton extends Obstacle {
 		int x = 100;
 		long y = x;
 		double z = x;
-		String x = false;
-		x = x++;
+//		String x = false;
+//		x = x++;
 	}
 	
 

@@ -1,0 +1,12 @@
+The historyDb.sql script will create a database named "historydb", and a user with DML privileges on it.
+
+The createPresTable.sql script will create a table named "president" and load it with data from "presidents.tsv".
+
+1. Use mysql as "root" to run the historyDb.sql script first.
+
+   mysql -u root -p < historyDb.sql
+
+2. Use mysql as "root" to run createPresTable.sql.
+
+   mysql -u root -p < loadTablesAndData.sql
+

@@ -1,0 +1,11 @@
+The stockDb.sql script will create a database named "stockdb", and a user with DML privileges on it.
+
+The createStockTable.sql script will create a table named "symbol" and load it with data from "stocks.tsv".
+
+1. Use mysql as "root" to run the stockDb.sql script first.
+
+   mysql -u root -p < stockDb.sql
+
+2. Use mysql as "root" to run createStockTable.sql.
+
+
