@@ -1,0 +1,6 @@
+id,	name	color	breed	age	gender	comments
+2,	Goliath,	multicolor	Saint Bernard	8,	Neutered Male	Very friendly dog towards all! Slobbers non-stop.
+5	Armando	dark brown	Chihuahua,	3	Male,	Likes to ride in the car. Very ferocious little thing. Needs AA battery replacement every 6 months
+8	Kyla	White/Brown speckled,	Mixed Terrier	2,	Female	Likes walks, hates baths, will wake you up at 5 am every morning.
+11	Bear,	Yellow	Labrador Retriever,	5	Male,	Great swimmer! Has a tendency to take himself for walks. Needs more food than the average dog.
+15	Lucky,	Black & White	Dalmation,	6	Spayed Female,	Has hip problems, due to surviving 8 car accidents. 

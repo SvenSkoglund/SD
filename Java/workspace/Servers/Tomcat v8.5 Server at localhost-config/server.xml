@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="JavaWebIntro" path="/JavaWebIntro" reloadable="true" source="org.eclipse.jst.jee.server:JavaWebIntro"/><Context docBase="MyHelloWorld" path="/MyHelloWorld" reloadable="true" source="org.eclipse.jst.jee.server:MyHelloWorld"/><Context docBase="LotteryApp" path="/LotteryApp" reloadable="true" source="org.eclipse.jst.jee.server:LotteryApp"/><Context docBase="NameChooser" path="/NameChooser" reloadable="true" source="org.eclipse.jst.jee.server:NameChooser"/><Context docBase="WebData" path="/WebData" reloadable="true" source="org.eclipse.jst.jee.server:WebData"/><Context docBase="WebDataLabs" path="/WebDataLabs" reloadable="true" source="org.eclipse.jst.jee.server:WebDataLabs"/><Context docBase="JSPViews" path="/JSPViews" reloadable="true" source="org.eclipse.jst.jee.server:JSPViews"/><Context docBase="ExpressionLanguage" path="/ExpressionLanguage" reloadable="true" source="org.eclipse.jst.jee.server:ExpressionLanguage"/><Context docBase="TagLibraries" path="/TagLibraries" reloadable="true" source="org.eclipse.jst.jee.server:TagLibraries"/><Context docBase="DAOPattern" path="/DAOPattern" reloadable="true" source="org.eclipse.jst.jee.server:DAOPattern"/><Context docBase="DAOPatternPresidents" path="/DAOPatternPresidents" reloadable="true" source="org.eclipse.jst.jee.server:DAOPatternPresidents"/></Host>
+      </Host>
     </Engine>
   </Service>
 </Server>

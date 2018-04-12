@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+  <context:component-scan base-package="web"/>
+
+  <bean id="lottery" class="lotto.Hopper">
+    <property name="name" value="Lottery Numbers"/>
+    <property name="pingPongBalls">
+      <list>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="1" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="2" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="3" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="4" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="5" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="6" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="7" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="8" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="9" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="10" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="11" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="12" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="13" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="14" />
+        </bean>
+        <bean class="lotto.PingPongBall">
+          <constructor-arg value="15" />
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>
