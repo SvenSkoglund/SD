@@ -9,8 +9,6 @@ import org.junit.Test;
 import org.springframework.ui.Model;
 import org.springframework.validation.support.BindingAwareModelMap;
 
-import com.skilldistillery.unittesting.controllers.info.InfoController;
-
 public class InfoControllerTests {
 
   @Test
@@ -30,6 +28,24 @@ public class InfoControllerTests {
     assertNotNull(map);
     assertEquals("The world will be conquered by robots...", map.get("description"));
     assertEquals(2035, map.get("year"));
+    
+  }
+  @Test
+  public void test_GET_getInfo() {
+    InfoController controller = new InfoController();
+    
+    // Create a Model implementation object to pass to the method
+    
+    // Controller method call
+    String view = controller.getInfo();
+    
+    assertEquals("info", view);
+    
+    // Get the model as a map of key-value pairs
+//    Map<String, Object> map = model.asMap();
+//    assertNotNull(map);
+//    assertEquals("The world will be conquered by robots...", map.get("description"));
+//    assertEquals(2035, map.get("year"));
     
   }
 }

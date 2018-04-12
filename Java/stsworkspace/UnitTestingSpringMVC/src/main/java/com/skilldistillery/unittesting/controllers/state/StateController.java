@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.skilldistillery.unittesting.data.State;
 import com.skilldistillery.unittesting.data.StateDAO;
@@ -37,15 +38,14 @@ public class StateController {
     return mv;
   }
 
-  @RequestMapping(path = "NewState.do", method = RequestMethod.POST)
-  public ModelAndView newState(State state) {
-    stateDAO.addState(state);
-    ModelAndView mv = new ModelAndView();
-    mv.setViewName("WEB-INF/result.jsp");
-    return mv;
-  }
+//  @RequestMapping(path = "NewState.do", method = RequestMethod.POST)
+//  public ModelAndView newState(State state) {
+//    stateDAO.addState(state);
+//    ModelAndView mv = new ModelAndView();
+//    mv.setViewName("WEB-INF/result.jsp");
+//    return mv;
+//  }
   
-  /*
   @RequestMapping(path = "NewState.do", method = RequestMethod.POST)
   public String newState(State state, RedirectAttributes redir) {
     stateDAO.addState(state);
@@ -53,6 +53,10 @@ public class StateController {
     return "redirect:stateAdded.do";
   }
 
+  
+  
+  
+  
   // Note: This does not use an InternalResourceViewResolver
   @RequestMapping("stateAdded.do")
   public ModelAndView stateAdded() {
@@ -60,7 +64,7 @@ public class StateController {
     mv.setViewName("WEB-INF/result.jsp");
     return mv;
   }
-  */
+  
   
 
 }
