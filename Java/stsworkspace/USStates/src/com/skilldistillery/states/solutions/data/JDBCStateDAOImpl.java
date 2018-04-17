@@ -84,8 +84,8 @@ public class JDBCStateDAOImpl implements StateDAO {
   }
   
   private State mapStateDataToState(ResultSet rs) throws SQLException {
-    State s = new State(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
-    return s;
+//    State s = new State(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
+    return null;
   }
 }
 

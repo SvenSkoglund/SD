@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/Users/svenskogland/SD/Tools/apache-tomcat-8.5.29/wtpwebapps/HelloSTS" path="/HelloSTS" reloadable="true" source="org.eclipse.jst.jee.server:HelloSTS"/></Host>
+      <Context docBase="/Users/svenskogland/SD/Tools/apache-tomcat-8.5.29/wtpwebapps/MVCFilmSite" path="/MVCFilmSite" reloadable="true" source="org.eclipse.jst.jee.server:MVCFilmSite"/><Context docBase="/Users/svenskogland/SD/Tools/apache-tomcat-8.5.29/wtpwebapps/SpringLottoWeb" path="/SpringLottoWeb" reloadable="true" source="org.eclipse.jst.jee.server:SpringLottoWeb"/><Context docBase="/Users/svenskogland/SD/Tools/apache-tomcat-8.5.29/wtpwebapps/USStatesSession" path="/USStatesSession" reloadable="true" source="org.eclipse.jst.j2ee.server:USStatesSession"/><Context docBase="/Users/svenskogland/SD/Tools/apache-tomcat-8.5.29/wtpwebapps/LoginSite" path="/LoginSite" reloadable="true" source="org.eclipse.jst.j2ee.server:LoginSite"/></Host>
     </Engine>
   </Service>
 </Server>
