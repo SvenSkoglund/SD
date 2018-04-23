@@ -55,16 +55,24 @@ public class PlayTone {
 			int counter = 0;
 			int lfo = 550;
 			int upDown = 1;
-			int longTermPitch = 0;
 			while (true) {
 				counter = 50;
 				i = 0;
-				 
+				while (upDown > 0) {
+
+					counter++;
+					Thread.sleep(1);
+					osc.frequency.set(100 + lfo + i++);
+					myFilter.frequency.set(osc.frequency.get());
+
+					if (counter % lfo == 0) {
+						upDown = -1;
+					}
 				}
+				
 				counter = 50;
 				i = 0;
 				while (upDown < 0) {
-					longTermPitch++;
 
 					counter++;
 					Thread.sleep(1);
@@ -75,9 +83,9 @@ public class PlayTone {
 						upDown = 1;
 					}
 				}
-			}
-
+			} 
 		}
+		
 		catch (InterruptedException e) {
 			e.printStackTrace();
 		}
