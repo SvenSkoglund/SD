@@ -2,7 +2,11 @@ package com.skilldistillery.jpavideostore.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Staff {
@@ -12,10 +16,11 @@ public class Staff {
 	// email -> SQL column name is email...no @Column necessary
 
 	public Staff() {
-		
+
 	}
-	
+
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	@Column(name = "first_name")
@@ -26,8 +31,45 @@ public class Staff {
 
 	private String email;
 
+	@ManyToOne
+	@JoinColumn(name="address_id")
+	private Address address;
+	
+	@ManyToOne
+	@JoinColumn(name="store_id")
+	private Store store;
+//	@Column(name = "create_date")
+//	@Temporal(TemporalType.DATE)
+//	private Date createdAt;
+//
+//	public Date getCreatedAt() {
+//		return createdAt;
+//	}
+//
+//	public void setCreatedAt(Date createdAt) {
+//		this.createdAt = createdAt;
+//	}
+	
+	
+
 	public String getFirstName() {
 		return firstName;
+	}
+
+	public Store getStore() {
+		return store;
+	}
+
+	public void setStore(Store store) {
+		this.store = store;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public void setFirstName(String firstName) {
@@ -62,6 +104,4 @@ public class Staff {
 		return builder.toString();
 	}
 
-	
-	
 }

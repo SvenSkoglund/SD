@@ -2,9 +2,16 @@ package com.skilldistillery.jpavideostore.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="address")
 public class Address {
 
 	// firstName -> SQL column name is first_name
@@ -15,7 +22,17 @@ public class Address {
 		
 	}
 	
+	public Address(String street, String state, String city, String postalCode, String phone) {
+		super();
+		this.street = street;
+		this.state = state;
+		this.city = city;
+		this.postalCode = postalCode;
+		this.phone = phone;
+	}
+
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	@Column(name="address")
@@ -33,6 +50,40 @@ public class Address {
 	private String postalCode;
 
 	private String phone;
+//	
+//	@OneToOne(mappedBy = "address")
+//	private Customer customer;
+//
+//	@OneToOne(mappedBy = "address")
+//	private Store store;
+	
+	@ManyToOne
+	@JoinColumn(name="country_code")
+	private Country country;
+	
+//	public Customer getCustomer() {
+//		return customer;
+//	}
+//
+//	public void setCustomer(Customer customer) {
+//		this.customer = customer;
+//	}
+//
+//	public Store getStore() {
+//		return store;
+//	}
+//
+//	public void setStore(Store store) {
+//		this.store = store;
+//	}
+
+	public Country getCountry() {
+		return country;
+	}
+
+	public void setCountry(Country country) {
+		this.country = country;
+	}
 
 	public String getStreet() {
 		return street;

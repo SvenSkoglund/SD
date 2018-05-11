@@ -8,10 +8,14 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
 		<class>com.skilldistillery.jpavideostore.entities.Customer</class>
+		<class>com.skilldistillery.jpavideostore.entities.Rental</class>
 		<class>com.skilldistillery.jpavideostore.entities.Address</class>
 		<class>com.skilldistillery.jpavideostore.entities.Staff</class>
 		<class>com.skilldistillery.jpavideostore.entities.Language</class>
 		<class>com.skilldistillery.jpavideostore.entities.Film</class>
+		<class>com.skilldistillery.jpavideostore.entities.Store</class>
+		<class>com.skilldistillery.jpavideostore.entities.Country</class>
+		<class>com.skilldistillery.jpavideostore.entities.InventoryItem</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.url"
