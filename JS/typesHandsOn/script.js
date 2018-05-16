@@ -1,0 +1,20 @@
+var x = 'Hello World';
+console.log(x);
+var num = 4/0;
+console.log(num);
+num = num - 5;
+console.log(num);
+num = num - num;
+console.log(num);
+num = NaN;
+console.log(num);
+num = NaN -4;
+console.log(num);
+
+var arrStr = ["str1" , "str2", "str3"];
+console.log(arrStr[0]+arrStr[1]+arrStr[2]);
+var arrNum = [1,2,3];
+console.log(arrNum[0]*arrNum[1]*arrNum[2]);
+var arrAdd = arrStr + arrNum;
+console.log(arrAdd);
+console.log(arrAdd[93]);

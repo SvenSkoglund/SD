@@ -1,0 +1,440 @@
+
+body {
+  background-color: #78c2df;
+  padding-top: 15em;
+  padding-bottom: 5em;
+}
+
+/*  ----------------------  small screens ---------------------------- */
+
+		
+		.main-header {
+			position: fixed;
+			top: 0;
+			z-index: 9999;
+			width: 100%;
+			margin-bottom: 50em;
+		}
+		
+		.rowCentSm{
+		padding-left: 10em;
+		}
+		
+		  .navtext{
+		   font-family: 'Crimson Text', serif;
+		   font-size: 2em;
+		   text-align: center;
+		   vertical-align: middle;
+		   padding: .1em;
+		   padding-bottom: .1em;
+		  }
+		
+		  .ideastext{
+		   font-family: 'Crimson Text', serif;
+		   font-size: 2em;
+		   font-weight: bolder;
+		   text-align: center;
+		   vertical-align: middle;
+		   padding: .1em;
+		   /*padding-left: 4em;*/
+		   padding-bottom: .1em;
+		  }
+		
+		  .linkcolor {
+		    color: white;
+		    text-decoration: none;
+		  }
+		
+		  .navbarcolor{
+		    background-color: #1f799c;
+		    font-family: 'Crimson Text', serif;
+		    color: #fcfeff;
+		  }
+		
+		  .bodytext {
+		  font-family: 'Raleway', sans-serif;
+		  align-items: center;
+		  background-color: #FCFEFF;
+		  padding: 0px;
+		  }
+		
+		  .ideaicons{
+		    /* border: 1px solid black; */
+		    margin: none;
+		    align-items: center;
+		    background-color: #FCFEFF;
+		    padding: 0px;
+		    height: 50%;
+		    padding-top: 2em;
+		    font-family: 'Raleway', sans-serif;
+		
+		    /* margin-top: 1em;
+		    margin-bottom: 1em; */
+		  }
+		
+		  .idearow{
+		    height: 50%;
+		    background-color: #FCFEFF;
+		    font-family: 'Raleway', sans-serif;
+		    padding-top: 2em;
+		    /* margin-top: 1em; */
+		    margin-bottom: 1em;
+		  }
+		
+		  /* Sets the column heights equal */
+		     #page-wrap { width: 75%; margin: .1em auto; align-content: center;}
+		        #page-wrap > div { margin: 0; min-width: 380px; width: 100%; }
+		
+		        #one-true { overflow: hidden; }
+		        #one-true .col {
+		            width: 50%;
+		            /* padding: 1em */;
+		            /* float: left; */
+		            margin-bottom: -99999px;
+		            padding-bottom: 99999px;
+		
+		        }
+		        #one-true .col1 {
+		            width: 25%;
+		            /* padding: 1em */;
+		            /* float: left; */
+		            margin-bottom: -99999px;
+		            padding-bottom: 99999px;
+		            padding-left: 2em;
+		            
+		
+		        }
+		
+		        #one-true p { margin-bottom: 25em; } /* Bottom padding on the column doesn't work */
+		
+		  .imgsize2 {
+		    width: 80%;
+		    height: 80%;
+		    border-radius: 50%;
+		    display: block;
+		    margin-left: 0 auto;
+		    margin-right: 0 auto;
+		    margin-top: 0 auto;
+		    margin-bottom: 0 auto;
+		  }
+		
+		.imgsize3 {
+		    width: 10%;
+		    height: 10%;
+		    border-radius: 50%;
+		    display: block;
+		    margin-left: 0 auto;
+		    margin-right: 0 auto;
+		    margin-top: 0 auto;
+		    margin-bottom: 0 auto;
+		  }
+		  
+		  .errorMessage {
+		  color: red;
+		  
+		  }
+		  
+		  		.imgsize4 {
+		    width: 20%;
+		    height: 20%;
+		    border-radius: 50%;
+		    display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+		    margin-top: auto;
+		    margin-bottom: auto;
+		  }
+		
+		 .imgsizeNav {
+			width: 10%;
+			height: 10%;
+			border-radius: 50%;
+			display: block;
+			margin-left:auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom: auto;
+			  }
+		  
+		  .dropbtn {
+		  	background-color: #4CAF50;
+		  	color: white;
+		  	padding: 2em;
+		  	font-size: 2em;
+		  	border: none;
+		}
+
+		.dropdown {
+		    position: relative;
+		    display: inline-block;
+		}
+		
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f1f1f1;
+		    min-width: 2em;
+		    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+		    z-index: 1;
+		}
+		
+		.dropdown-content a {
+		    font-family: 'Crimson Text', serif;
+		    font-size: .5em;
+		    color: black;
+		    padding: .2em;
+		    text-decoration: none;
+		    display: block;
+		}
+		
+		.dropdown-content a:hover {background-color: #ddd}
+		
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+		
+		.dropdown:hover .dropbtn {
+		    background-color: #3e8e41;
+		}
+		  
+		  
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   background-color: #1f799c;
+		   color: #FCFEFF;
+		   text-align: center;
+		}
+		
+			
+/* -----------larger than 775px --------------------------------------- */
+
+@media (min-width: 415px) {
+
+body {
+  background-color: #78c2df;
+  padding-top: 10em;
+  padding-bottom: 5em;
+}
+	
+			.main-header {
+				position: fixed;
+				top: 0;
+				z-index: 9999;
+			}
+			
+		      .navtext{
+		       font-family: 'Crimson Text', serif;
+		       font-size: 2em;
+		       text-align: center;
+		       vertical-align: middle;
+		       padding: .1em;
+		       padding-top: .5em;
+		       padding-bottom: .5em;
+		      }
+		
+		      .ideastext{
+		       font-family: 'Crimson Text', serif;
+		       font-size: 3em;
+		       font-weight: bolder;
+		       text-align: left;
+		       vertical-align: middle;
+		       padding: .1em;
+		       padding-left: 4em;
+		       padding-bottom: .5em;
+		      }
+		
+		      .linkcolor {
+		        color: white;
+		      	text-decoration: none;
+		      }
+		
+		      .navbarcolor{
+		        background-color: #1f799c;
+		        font-family: 'Crimson Text', serif;
+		        color: #fcfeff;
+		      }
+			
+			.textformat{
+				font-family: 'Raleway', sans-serif;
+				}
+				
+			.textformatHeadline{
+				font-family: 'Raleway', sans-serif;
+				color: white;
+				}
+				
+			.textformatBody{
+				font-family: 'Raleway', sans-serif;
+				color: white;
+				}
+				
+			
+		      .bodytext {
+		      font-family: 'Raleway', sans-serif;
+		      align-items: center;
+		      background-color: #FCFEFF;
+		      padding: 0px;
+		      }
+		
+		      .rowHt {
+		        height: 100%;
+		      }
+		
+		      .ideaicons{
+		        /* border: 1px solid black; */
+		        margin: none;
+		        align-items: center;
+		        background-color: #FCFEFF;
+		        padding: 0px;
+		        height: 50%;
+		        /* padding-top: 2em; */
+		        font-family: 'Raleway', sans-serif;
+		        margin-top: 1em;
+		        margin-bottom: 1em;
+		      }
+		
+		      .idearow{
+		        height: 50%;
+		        background-color: #FCFEFF;
+		        font-family: 'Raleway', sans-serif;
+		        padding-top: 1em;
+		        padding-top: 1em;
+		        margin-top: 1em;
+		        margin-bottom: 1em;
+		      }
+		      
+		      
+		      /* Sets the column heights equal */
+		        #page-wrap { width: 85%; margin: .1em auto; align-content: center;}
+		        #page-wrap > div { margin: 0; min-width: 500px; width: 100%; }
+		
+		        #one-true { overflow: hidden; }
+		        #one-true .col {
+		            width: 60%;
+		            /* padding: 1em */;
+		            /* float: left; */
+		            margin-bottom: -99999px;
+		            padding-bottom: 99999px;
+		
+		        }
+		        #one-true .col1 {
+		            width: 20%;
+		            /* padding: 1em */;
+		            /* float: left; */
+		            margin-bottom: -99999px;
+		            padding-bottom: 99999px;
+		            padding-left: 2em;
+		            
+		
+		        }
+		
+		        #one-true p { margin-bottom: 25em; } /* Bottom padding on the column doesn't work */
+		
+		      .imgsize2 {
+		        width: 50%;
+		        height: 50%;
+		        border-radius: 50%;
+		        display: block;
+		        margin-left: 0 auto;
+		        margin-right: 0 auto;
+		        margin-top: 0 auto;
+		        margin-bottom: 0 auto;
+		      }
+		      
+				.imgsize3 {
+			    width: 10%;
+			    height: 10%;
+			    border-radius: 50%;
+			    display: block;
+			    margin-left: 0 auto;
+			    margin-right: 0 auto;
+			    margin-top: 0 auto;
+			    margin-bottom: 0 auto;
+			  }
+			  
+			  .imgsizeNav {
+			    width: 25%;
+			    height: 25%;
+			    border-radius: 50%;
+		    	display: block; 
+			    margin-left: 10;
+			    margin-right: 0 auto;
+			    margin-top: 0 auto;
+			    margin-bottom: 0 auto; 
+			  }
+		
+		.dropbtn {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 2em;
+		  font-size: 2em;
+		  border: none;
+		}
+
+		.dropdown {
+		    position: relative;
+		    display: inline-block;
+		}
+		
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f1f1f1;
+		    min-width: 5em;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+		
+		.dropdown-content a {
+		    font-family: 'Crimson Text', serif;
+		    font-size: .7em;
+		    color: black;
+		    padding: .2em;
+		    text-decoration: none;
+		    display: block;
+		}
+		
+		.dropdown-content a:hover {background-color: #ddd}
+		
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+		
+		.dropdown:hover .dropbtn {
+		    background-color: #3e8e41;
+		}
+		
+		  	 .outer {
+			 width: 100%;
+			 } 
+			  
+			 .inner  {
+			  min-width: 40%;
+			  height: 5em;
+			  margin: auto;
+			  float: none;
+			  align: center;
+			  align-content: center;
+			  }
+			  
+			  #title {
+			  min-width: 40%;
+			  height: 2em;
+			  margin: auto;
+			  float: none;
+			  
+			  } 
+
+		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   background-color: #1f799c;
+		   color: #FCFEFF;
+		   text-align: center;
+		}
+    }
