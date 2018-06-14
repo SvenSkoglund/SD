@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div id="wrapperDiv">
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+    </ul>
+  </div>
+</body>
+<script type="text/javascript">
+var div = document.getElementById('wrapperDiv');
+var list = div.children;
+// Select the unordered list and return a list of its children.
+var ulChildren = list.children;
+// Select the parent element of the unordered list.
+var liParent = ulChildren.parentElement;
+// Select the parent element of the div.
+var body = div.parentElement;
+// Select the second list item and print out its textContent.
+</script>
+</html>

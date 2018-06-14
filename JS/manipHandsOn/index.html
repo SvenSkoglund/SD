@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form name='myForm' action="something">
+    		<input type='text' name='fname' value="Sven" />
+    		<input type='text' name='lname' value="Skoglund"/>
+    		<input type='submit' name='myButton' value='submit' />
+    	</form>
+
+      <script type="text/javascript">
+
+      var button = document.myForm.myButton;
+      button.addEventListener('click',function(e){
+        e.preventDefault();
+
+        console.log(document.myForm.fname); // <input type='text' name='fname' />
+		    console.log(document.myForm.lname); // <input type='text' name='lname' />
+      });
+		    console.log(document.myForm.fname); // <input type='text' name='fname' />
+		    console.log(document.myForm.lname); // <input type='text' name='lname' />
+		    console.log(document.myForm.submit); // <input type='submit' name='submit' value='submit' />
+      </script>
+  </body>
+</html>

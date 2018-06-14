@@ -1,0 +1,12 @@
+<!-- Make a registration form in register.component.html that has input fields for email, username, and password. -->
+
+<form #registerForm="ngForm">
+    <input type="email" name="email" [(ngModel)]='email'>
+    <br>
+    <input type="text" name="username" [(ngModel)]='username'>
+    <br>
+    <input type="text" name="password" [(ngModel)]='password'>
+    <br>
+    <input type='submit' (click)="register()" name='submit' value='submit'>
+    <button>Cancel</button>
+  </form>

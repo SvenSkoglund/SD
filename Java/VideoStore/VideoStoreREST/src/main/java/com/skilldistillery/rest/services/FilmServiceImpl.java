@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.skilldistillery.jpavideostore.entities.Actor;
 import com.skilldistillery.jpavideostore.entities.Film;
 import com.skilldistillery.jpavideostore.entities.Language;
 import com.skilldistillery.rest.repositories.FilmRepository;
@@ -54,5 +55,10 @@ public class FilmServiceImpl implements FilmService {
 	public Film replace(int id, Film film) {
 		repo.saveAndFlush(film);
 		return film;
+	}
+
+	@Override
+	public List<Actor> getActorsForFilm(int id) {
+		return repo.queryByFilmIdWithActors(id).getActors();
 	}
 }

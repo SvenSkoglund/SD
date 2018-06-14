@@ -1,0 +1,50 @@
+<h1 [ngClass]= "checkColor()">{{title}} {{toDoCount()}}</h1>
+<table *ngIf='!selected'>
+  <thead>
+    <td>Task</td>
+    <td>Mark</td>
+    <td>Completed</td>
+  </thead>
+  <tr *ngFor='let todo of todos | incomplete:showComplete' [ngClass]= "todo.completed ? 'completed' : 'incomplete'">
+    <td (click)='displayToDo(todo)'>{{todo.task}}</td>
+    <td>
+      <input type="checkbox" name="completed" [(ngModel)]='todo.completed' (change)="updateTodo(todo)" />
+    </td>
+    <td>{{todo.completed}}</td>
+    <td>
+      <button (click)="deleteTodo(todo.id)">Delete</button>
+    </td>
+  </tr>
+</table>
+<form>
+  Show Completed:
+  <input type="checkbox" name='showComplete' [(ngModel)]='showComplete'>
+</form>
+<!-- Now we need a way of determining which todo to display in the detail view. Add a (click) to each task in the table displaying the todos. Assign the (click) a callback named displayTodo(todo). When a task is clicked on, set selected to that todo object. -->
+
+<form *ngIf="!selected && !editTodo" #createForm="ngForm">
+  <input type="text" name='task' ngModel>
+  <input type="submit" value="Add Item" (click)="onSubmit(createForm)" />
+</form>
+<!-- In todo-list.component.html create a div. Inside of this div, create a detail view of the todo stored in selected (i.e. bind selected's properties within the div). Display the id, task, completed, and description properties. -->
+<div *ngIf='selected'>
+  <ul>
+    <li>{{selected.id}}</li>
+    <li>{{selected.task}}</li>
+    <li>{{selected.description}}</li>
+    <li>{{selected.completed}}</li>
+  </ul>
+  <button (click)='setEditTodo(selected)'>Edit</button>
+  <button (click)='displayTable()'>Return</button>
+</div>
+
+<form *ngIf="editTodo" #editForm="ngForm">
+  <input type="text" name="task" [(ngModel)]="editTodo.task">
+  <br>
+  <input type="text" name="description" [(ngModel)]="editTodo.description">
+  <br>
+  <input type="checkbox" name="completed" [(ngModel)]="editTodo.completed">
+  <br>
+  <button (click)="editTodo = null">Cancel</button>
+  <button (click)="updateTodo(editTodo)">Save</button>
+</form>

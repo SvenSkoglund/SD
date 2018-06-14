@@ -1,0 +1,25 @@
+<h3>Number of Products : {{getNumberOfProducts()}}</h3>
+
+<ul>
+  <div *ngFor='let product of products'>
+    <img src="{{product.imgUrl}}" alt=""/>
+    <h3>{{product.name}}</h3>
+    <p>{{product.rating}}/5 Stars</p>
+    <p>{{product.price}}</p>
+  <hr>
+  </div>
+  <form #createForm = "ngForm">
+      <input type="text" name="name" placeholder="Name" ngModel /><br />
+      <input type="text" name="price" placeholder="Price" ngModel /><br />
+      <input type="text" name="imgUrl" placeholder="Image URL" ngModel /><br />
+      <input type="number" name="rating" placeholder="rating" ngModel /><br />
+      <input type="submit" value="Add Item" (click)="onSubmit(createForm)"/>
+  </form>
+
+  <div *ngIf='display'>
+    <h2>Hello</h2>
+  </div>
+
+  <button (click)="log('This is a click event')">Click Me</button>
+</ul>
+

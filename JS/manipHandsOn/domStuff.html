@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript">
+    window.addEventListener('load',function(){
+      console.log("Window Loaded");
+
+var myForm = document.createElement("form");
+myForm.name = "myForm";
+var email = document.createElement("input");
+email.name="email";
+myForm.appendChild(email);
+var password = document.createElement("input");
+password.name="password";
+myForm.appendChild(password);
+var button = document.createElement("input");
+button.value="button";
+button.name="button";
+button.type="button";
+myForm.appendChild(button);
+button.addEventListener('click',function(e){
+  e.preventDefault();
+  console.log(e.target.previousElementSibling.value);
+  console.log(e.target.previousElementSibling.previousElementSibling.value);
+});
+
+document.body.appendChild(myForm);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+  var foods = ["Eggs","Cheese","Bacon"];
+  var h1 = document.createElement('h1');
+  h1.textContent="Hello World";
+  document.body.appendChild(h1);
+
+  var ol = document.createElement('ol');
+  for (var i = 0; i < foods.length; i++) {
+    var li = document.createElement('li');
+    li.textContent =foods[i];
+    ol.appendChild(li);
+  }
+  document.body.appendChild(ol);
+
+  </script>
+</body>
+
+</html>

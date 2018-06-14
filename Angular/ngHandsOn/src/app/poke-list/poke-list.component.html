@@ -1,0 +1,45 @@
+<form #createPoke = "ngForm">
+    <input type="text" name="pokeId" placeholder="ID" ngModel /><br />
+    <input type="text" name="name" placeholder="Name" ngModel /><br />
+    <input type="text" name="description" placeholder="Description" ngModel /><br/>
+    <input type="text" name="height" placeholder="Height" ngModel /><br />
+    <input type="text" name="weight" placeholder="Weight" ngModel /><br />
+    <input type="number" name="exp" placeholder="Experience" ngModel /><br />
+    <input type="text" name="img" placeholder="Image URL" ngModel /><br />
+    <input type="submit" value="Add Item" (click)="create(createPoke)"/>
+</form>
+<div *ngIf="!selected">
+<span *ngFor="let type of types" (click)='selectedType = type'>{{type}} | </span>
+</div>
+<table *ngIf="!selected">
+    <thead>
+      <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>image</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let poke of pokemons | pokeType:selectedType" (click)="selectPoke(poke)">
+        <td>{{poke.pokeId}}</td>
+        <td>{{poke.name}}</td>
+        <td>
+          <img src={{poke.img}}/>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- id, name, img, description, height, weight, types.
+The div should also have a 'back' button that when clicked sets selected = null; -->
+
+<div *ngIf="selected">
+  <img src="{{selected.img}}">
+  <h1>Name: {{selected.name | uppercase}}</h1>
+  <p>ID: {{selected.id}}</p>
+  <p>Description: {{selected.description}}</p>
+  <p>Height: {{selected.height | number:'1.1'}}</p>
+  <p>Weight: {{selected.weight | number:'1.1'}}</p>
+  <p *ngFor='let type of selected.types'>Type: {{type.name}}</p>
+  <button (click)="deselectPoke()">Return</button>
+</div>

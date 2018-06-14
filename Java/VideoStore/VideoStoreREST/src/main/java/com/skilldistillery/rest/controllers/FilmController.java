@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.skilldistillery.jpavideostore.entities.Actor;
 import com.skilldistillery.jpavideostore.entities.Film;
 import com.skilldistillery.rest.services.FilmService;
 
@@ -29,10 +30,6 @@ public class FilmController {
 		return filmService.show(id);
 	}
 
-	// public Film create(Film film);
-	// public Film update(Film film);
-	// public Boolean delete(Film film);
-
 	@RequestMapping(path = "films", method = RequestMethod.POST)
 	public Film create(@RequestBody Film film) {
 		return filmService.create(film);
@@ -51,5 +48,9 @@ public class FilmController {
 	@RequestMapping(path = "films/{id}", method = RequestMethod.DELETE)
 	public Boolean update(@PathVariable int id) {
 		return filmService.delete(id);
+	}
+	@RequestMapping(path="films/{id}/actors", method = RequestMethod.GET)
+	public List<Actor> getActorsForFilm(@PathVariable int id){
+		return filmService.getActorsForFilm(id);
 	}
 }

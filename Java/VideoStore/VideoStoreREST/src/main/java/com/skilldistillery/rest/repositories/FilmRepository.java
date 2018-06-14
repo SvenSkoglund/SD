@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import com.skilldistillery.jpavideostore.entities.Actor;
 import com.skilldistillery.jpavideostore.entities.Film;
 import com.skilldistillery.jpavideostore.entities.Rating;
 
@@ -35,6 +36,9 @@ public interface FilmRepository extends JpaRepository<Film, Integer> {
 
 	@Query("SELECT f FROM Film f JOIN FETCH f.actors")
 	List<Film> queryByFilmWithActors();
+	
+	@Query("SELECT f FROM Film f JOIN FETCH f.actors where f.id = :id")
+	Film queryByFilmIdWithActors(@Param("id") int id);
 	
 	
 	List<Film> findByRating(Rating rating);	

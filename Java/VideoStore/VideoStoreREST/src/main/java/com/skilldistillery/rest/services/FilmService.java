@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.skilldistillery.jpavideostore.entities.Actor;
 import com.skilldistillery.jpavideostore.entities.Film;
 
 @Service
@@ -15,4 +16,5 @@ public interface FilmService {
 	public Film update(Film film);
 	public Boolean delete(int id);
 	public Film replace(int id, Film film);
+	public List<Actor> getActorsForFilm(int id);
 }

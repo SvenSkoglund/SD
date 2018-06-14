@@ -1,0 +1,23 @@
+.car {
+  width: 150px;
+  height: 150px;
+  margin-left: 0px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}
+
+body {
+  background-image: url("img/keyboard.jpg");
+
+}
