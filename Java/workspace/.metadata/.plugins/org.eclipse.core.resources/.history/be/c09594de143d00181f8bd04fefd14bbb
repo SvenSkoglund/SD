@@ -1,0 +1,14 @@
+package mypackage;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MyController {
+
+	// Add a method to your controller class with an @RequestMapping annotation set
+	// to the action you specified in your HTML file in step 6. The method should
+	// return a ModelAndView object and have parameters that match the request
+	// parameters from the HTML. Use the @RequestParam annotation to match request
+	// parameters with method parameters. The name of the method can be anything.
+	// Again, use ⌘ + shift + o to import the necessary dependencies.
+}

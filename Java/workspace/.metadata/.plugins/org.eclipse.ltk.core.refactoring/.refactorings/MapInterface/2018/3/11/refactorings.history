@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;firstChare&apos; in &apos;com.skilldistillery.mapinterface.labs.MapCollectionExample.main(...)&apos; to &apos;firstChar&apos;&#x0A;- Original project: &apos;MapInterface&apos;&#x0A;- Original element: &apos;com.skilldistillery.mapinterface.labs.MapCollectionExample.main(String[]).firstChare&apos;&#x0A;- Renamed element: &apos;firstChare&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;firstChare&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.skilldistillery.mapinterface.labs{MapCollectionExample.java[MapCollectionExample~main~\[QString;@firstChare!260!297!270!279!QCharacter;!0!false" name="firstChar" references="true" stamp="1520981936585" version="1.0"/>
+</session>

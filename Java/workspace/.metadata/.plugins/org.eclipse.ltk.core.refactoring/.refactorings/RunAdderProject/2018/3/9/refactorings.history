@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;scanner&apos; in &apos;RunAdder.main(...)&apos; to &apos;kb&apos;&#x0A;- Original project: &apos;RunAdderProject&apos;&#x0A;- Original element: &apos;RunAdder.main(String[]).scanner&apos;&#x0A;- Renamed element: &apos;scanner&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;scanner&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{RunAdder.java[RunAdder~main~\[QString;@scanner!96!136!104!110!QScanner;!0!false" name="kb" references="true" stamp="1519918913074" version="1.0"/>
+</session>

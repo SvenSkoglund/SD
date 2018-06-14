@@ -1,0 +1,29 @@
+package com.skilldistillery.states.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.skilldistillery.states.data.StateDAO;
+
+@Controller
+public class StateController {
+	// TODO : Autowire a StateDAO and create getters and setters
+	@Autowired
+	StateDAO dao;
+	// TODO : Implement a request handler for:
+	// path "GetStateData.do"
+	// params "name"
+	// method GET
+	// return : ModelAndView
+	// view : "WEB-INF/result.jsp"
+	// object : "state", StateDAO.getStateByName
+
+	// TODO : Implement a request handler for:
+	// path "GetStateData.do"
+	// params "abbr"
+	// method GET
+	// return : ModelAndView
+	// view : "WEB-INF/result.jsp"
+	// object : "state", StateDAO.getStateByAbbreviation
+
+}

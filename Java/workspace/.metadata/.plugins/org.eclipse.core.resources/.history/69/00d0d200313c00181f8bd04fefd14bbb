@@ -1,0 +1,38 @@
+package com.skilldistillery.webdatalabs.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class UserDataServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		PrintWriter pw = resp.getWriter();
+		pw.println("<html><head><title>User Data</title></head><body>");
+		pw.println("<h1>You entered:</h1>");
+		pw.println(req.getAttribute("firstName"));
+		pw.println(req.getAttribute("lastName"));
+		pw.println(req.getAttribute("days"));
+		pw.println("</body></html>");
+	
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		PrintWriter pw = resp.getWriter();
+		String firstName = req.getParameter("firstName");
+		String lastName = req.getParameter("lastName");
+		pw.println("<html><head><title>User Data</title></head><body>");
+		pw.println("<h1>You entered:</h1>");
+		pw.println(firstName);
+		pw.println(lastName);
+		pw.println(req.getAttribute("days"));
+		pw.println("</body></html>");
+	}
+
+}

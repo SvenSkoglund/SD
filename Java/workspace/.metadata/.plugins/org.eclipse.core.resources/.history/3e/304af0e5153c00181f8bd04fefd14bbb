@@ -1,0 +1,7 @@
+package com.skilldistillery.servlets;
+
+import javax.servlet.http.HttpServlet;
+
+public class MyHelloWorldServlet extends HttpServlet {
+
+}

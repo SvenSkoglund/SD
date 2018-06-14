@@ -1,0 +1,54 @@
+package com.skilldistillery.jdbc.drills;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.*;
+import java.util.Scanner;
+
+
+public class JDBCTest {
+	private static final String URL = "jdbc:mysql://localhost:3306/sdvid";
+	public JDBCTest() throws ClassNotFoundException {
+		Class.forName("com.mysql.jdbc.Driver");
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	    Scanner input = new Scanner(System.in);
+		System.out.println("JDBCTest started.");
+	    JDBCTest tester = new JDBCTest();
+	    int entry = -1;
+	    do {
+	    	System.out.println("Enter a store ID to search (0 to quit)");
+	    	entry = input.nextInt();
+	    	tester.showStaff(entry);
+	    } while (entry != 0);
+	    	
+	  
+	  }
+	  
+	  public void showStaff(Integer storeID) throws SQLException, ClassNotFoundException {
+		  String user = "student";
+		  String pass = "student";
+			Connection conn = DriverManager.getConnection(URL,user,pass);
+			String sql = "SELECT id, first_name, last_name FROM staff WHERE store_id = ?";
+			PreparedStatement stmt = conn.prepareStatement(sql);
+			stmt.setString(1, storeID.toString());
+			ResultSet rs = stmt.executeQuery(sql);
+			while(rs.next()) {
+				int id = rs.getInt(1);
+				String fn = rs.getString(2);
+				String ln = rs.getString(3);
+				System.out.println(id+"\t"+
+								   fn+"\t"+
+								   ln);
+				
+			}
+			
+			rs.close();
+			stmt.close();
+			conn.close();
+
+	  }
+	}

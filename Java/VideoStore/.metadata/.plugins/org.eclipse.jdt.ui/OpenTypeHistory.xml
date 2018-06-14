@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=JPAVideoStore/src&lt;com.skilldistillery.jpavideostore.data{ActorDAO.java[ActorDAO" modifiers="513" timestamp="1524676315000"/>
+<typeInfo handle="=MVCVideoStore/src\/main\/java&lt;com.skilldistillery.mvcvideostore.data{FilmDAO.java[FilmDAO" modifiers="513" timestamp="1524169591000"/>
+<typeInfo handle="=VideoStoreREST/src\/main\/java&lt;com.skilldistillery.rest.data{AddressDAO.java[AddressDAO" modifiers="513" timestamp="1525795326000"/>
+<typeInfo handle="=VideoStoreREST/src\/main\/java&lt;com.skilldistillery.rest.data{FilmDAO.java[FilmDAO" modifiers="513" timestamp="1525800570000"/>
+<typeInfo handle="=VideoStoreREST/src\/main\/java&lt;com.skilldistillery.rest.services{FilmService.java[FilmService" modifiers="513" timestamp="1525898198000"/>
+</typeInfoHistroy>

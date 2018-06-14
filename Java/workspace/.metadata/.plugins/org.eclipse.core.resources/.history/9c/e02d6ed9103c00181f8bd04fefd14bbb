@@ -1,0 +1,7 @@
+package com.skilldistillery.javaweb.labs;
+
+import javax.servlet.http.HttpServlet;
+
+public class GoodbyeServlet extends HttpServlet {
+
+}

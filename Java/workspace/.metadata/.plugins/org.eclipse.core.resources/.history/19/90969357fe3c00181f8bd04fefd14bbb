@@ -1,0 +1,47 @@
+package com.skilldistillery.servlets;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.skilldistillery.data.president.JDBCPresidentDAOImpl;
+import com.skilldistillery.data.president.President;
+import com.skilldistillery.data.president.PresidentDAO;
+
+public class PresidentServlet extends HttpServlet {
+
+	private PresidentDAO presidentDAO;
+
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		try {
+			presidentDAO = new JDBCPresidentDAOImpl();
+		}
+		catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String party = req.getParameter("party");
+		if (party.length() > 0) {
+			List<President> pByParty = presidentDAO.findByParty(party);
+			req.setAttribute("presidentsByParty", pByParty);
+		}
+		String lastName = req.getParameter("lastName");
+		if (lastName.length() > 0) {
+			List<President> pByLastName = presidentDAO.findByLastName(party);
+			req.setAttribute("presidentsByParty", pByLastName);
+		}
+
+		req.getRequestDispatcher("/WEB-INF/presidents.jsp").forward(req, resp);
+
+	}
+}

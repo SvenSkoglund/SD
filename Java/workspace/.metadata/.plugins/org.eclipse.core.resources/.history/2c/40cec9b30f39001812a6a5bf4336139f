@@ -1,0 +1,14 @@
+package com.skilldistillery.jdbc.drills;
+
+public class JDBCTest {
+
+	  public static void main(String[] args) {
+	    System.out.println("JDBCTest started.");
+	    JDBCTest tester = new JDBCTest();
+	    tester.showStaff();
+	  }
+	  
+	  public void showStaff() {
+		  
+	  }
+	}

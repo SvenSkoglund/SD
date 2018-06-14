@@ -1,0 +1,28 @@
+package com.skilldistillery.jdbc.drills;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class JDBCTest {
+	private static final String URL = "jdbc:mysql://localhost:3306/sdvid";
+	public JDBCTest() throws ClassNotFoundException {
+		Class.forName("com.mysql.jdbc.Driver");
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	    System.out.println("JDBCTest started.");
+	    JDBCTest tester = new JDBCTest();
+	    tester.showStaff();
+	  
+	  }
+	  
+	  public void showStaff() throws SQLException, ClassNotFoundException {
+		  String user = "student";
+		  String pass = "student";
+			Connection conn = DriverManager.getConnection(URL,user,pass);
+			
+			conn.close();
+
+	  }
+	}

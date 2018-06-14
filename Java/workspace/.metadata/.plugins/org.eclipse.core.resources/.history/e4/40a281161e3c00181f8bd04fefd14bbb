@@ -1,0 +1,26 @@
+package com.skilldistillery.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class NameServlet extends HttpServlet {
+	String[] firstNames = { "Stacie", "Youlanda", "Loma", "Jeri", "Erin", "Damon", "Marielle", "India", "America",
+			"Quinn", "Vallie", "Shalon", "Alonzo", "Ruthie", "Lindsey", "Richard", "Dorthy", "Devona", "Judi",
+			"Caterina", "Rossana", "Aracely", "Clara", "Ebonie", "Sindy", "Stephnie", "Blythe", "Lakendra", "Marget",
+			"Tommy" };
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		this.doPost(req, resp);
+	}
+
+}

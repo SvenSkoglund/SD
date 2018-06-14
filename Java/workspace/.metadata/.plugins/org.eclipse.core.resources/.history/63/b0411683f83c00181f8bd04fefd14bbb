@@ -1,0 +1,41 @@
+package com.skilldistillery.data.president;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MockPresidentDAO implements PresidentDAO {
+//	public President(int termNumber, String firstName, String middleName, String lastName, int electionsWon,
+//		      String reasonLeftOffice, String party)
+	List<President> p = new ArrayList<President>();
+	{
+	p.add(new President(1, "sven", "richard", "Skoglund", 10, "got bored", "always"));
+	p.add(new President(2, "Mark	", "Joseph", "Coleman", 1, "drugs", "green"));
+	p.add(new President(3, "John", "Bob", "Jones", 3, "sexual misconduct", "communist"));
+	}
+	
+	
+	@Override
+	public List<President> getPresidents() {
+		
+		return p;
+	}
+
+	@Override
+	public President getPresidentByTermNumber(int number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<President> findByParty(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<President> findByLastName(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

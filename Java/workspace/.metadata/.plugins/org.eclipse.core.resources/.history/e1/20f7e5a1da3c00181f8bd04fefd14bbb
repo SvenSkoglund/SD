@@ -1,0 +1,50 @@
+package com.skilldistillery.taglibraries.drills.servlets;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.skilldistillery.taglibraries.data.Stock;
+import com.skilldistillery.taglibraries.data.StockProvider;
+
+public class StockServletList extends HttpServlet {
+	private StockProvider stockProvider;
+
+	@Override
+	public void init() throws ServletException {
+		try {
+			stockProvider = new StockProvider();
+		}
+		catch (ClassNotFoundException e) {
+			throw new ServletException(e);
+		}
+	}
+
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		List<Stock> stocks = new ArrayList<>();
+		// Get all Stocks and add them to the request
+		if (req.getParameter("search") != null) {
+			// List<Stock> stocks = new ArrayList<>();
+			String firstLetter = req.getParameter("search");
+			for (Stock stock : stocks) {
+				if (stock.getSymbol().charAt(0) == firstLetter.charAt(0))
+					;
+				stocks.add(stock);
+			}
+		}
+		else {
+			stocks = stockProvider.getAllStocks();
+		}
+		req.setAttribute("allStocks", stocks);
+
+		req.getRequestDispatcher("/WEB-INF/listStocks.jsp").forward(req, resp);
+
+	}
+
+}

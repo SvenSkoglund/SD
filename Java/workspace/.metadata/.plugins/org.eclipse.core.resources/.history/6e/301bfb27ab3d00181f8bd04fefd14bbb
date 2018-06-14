@@ -1,0 +1,12 @@
+package com.skilldistillery.presidents.controllers;
+
+import org.springframework.context.annotation.Conditional;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class PresidentController {
+
+	
+	@RequestMapping("President.do")
+}

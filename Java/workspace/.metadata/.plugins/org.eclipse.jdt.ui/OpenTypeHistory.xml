@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=WhiteRabbit/src&lt;com.skilldistillery.games.whiterabbit.items{GameItem.java[GameItem" modifiers="513" timestamp="1520894888000"/>
+<typeInfo handle="=WhiteRabbit/src&lt;com.skilldistillery.games.whiterabbit.items{FoodFactory.java[FoodFactory" modifiers="513" timestamp="1520900135000"/>
+<typeInfo handle="=WhiteRabbit/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_161.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.awt.dnd(DragSourceListener.class[DragSourceListener" modifiers="1537" timestamp="1513730554000"/>
+<typeInfo handle="=WhiteRabbit/src&lt;com.skilldistillery.games.whiterabbit.io{Drawable.java[Drawable" modifiers="513" timestamp="1517420256000"/>
+<typeInfo handle="=PigLatin/src&lt;com.skilldistillery.texttranslation{Translator.java[Translator" modifiers="513" timestamp="1521064618000"/>
+<typeInfo handle="=CollectionSorting/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_161.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1513730554000"/>
+<typeInfo handle="=SubclassInitialization/src&lt;com.skilldistillery.subinit.labs{SuperClass.java[SuperClass" modifiers="1" timestamp="1522173791000"/>
+<typeInfo handle="=DAOPattern/src&lt;com.skilldistillery.daopattern.drills{PresidentDAO.java[PresidentDAO" modifiers="513" timestamp="1518809808000"/>
+<typeInfo handle="=DAOPatternPresidents/src&lt;com.skilldistillery.data.president{PresidentDAO.java[PresidentDAO" modifiers="513" timestamp="1519053230000"/>
+</typeInfoHistroy>

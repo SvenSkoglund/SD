@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="info.do" method="POST">
+		<label for="firstName">First</label> <input type="text"
+			name="firstName"> <br> <label for="lastName">Last</label>
+		<input type="text" name="lastName">
+		<h3>Choose your interests</h3>
+		<div>
+			<input type="checkbox" id="coding" name="days" value="coding">
+			<label for="coding">Coding</label>
+		</div>
+		<div>
+			<input type="checkbox" id="animals" name="days" value="animals">
+			<label for="animals">Animals</label>
+		</div>
+		<div>
+			<input type="checkbox" id="presidents" name="days"
+				value="presidents"> <label for="presidents">Presidents</label>
+		</div>
+		<div>
+			<input type="checkbox" id="presidents" name="days"
+				value="presidents"> <label for="presidents">Presidents</label>
+		</div>
+		<div>
+			<input type="checkbox" id="presidents" name="days"
+				value="presidents"> <label for="presidents">Presidents</label>
+		</div>
+		<div>
+			<input type="checkbox" id="presidents" name="days"
+				value="presidents"> <label for="presidents">Presidents</label>
+		</div>
+		<div>
+			<input type="checkbox" id="presidents" name="days"
+				value="presidents"> <label for="presidents">Presidents</label>
+		</div>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;presidents&apos; in &apos;com.skilldistillery.daopattern.drills.MockPresidentDAO.getPresidents()&apos; to &apos;list&apos;&#x0A;- Original project: &apos;DAOPattern&apos;&#x0A;- Original element: &apos;com.skilldistillery.daopattern.drills.MockPresidentDAO.getPresidents().presidents&apos;&#x0A;- Renamed element: &apos;presidents&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;presidents&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/test&lt;com.skilldistillery.daopattern.drills{MockPresidentDAO.java[MockPresidentDAO~getPresidents@presidents!212!258!228!237!QList\&lt;QPresident;&gt;;!0!false" name="list" references="true" stamp="1523383069793" version="1.0"/>
+</session>

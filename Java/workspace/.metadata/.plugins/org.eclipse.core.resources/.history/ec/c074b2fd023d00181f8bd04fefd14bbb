@@ -1,0 +1,59 @@
+package com.skilldistillery.servlets;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.skilldistillery.data.president.JDBCPresidentDAOImpl;
+import com.skilldistillery.data.president.MockPresidentDAO;
+import com.skilldistillery.data.president.President;
+import com.skilldistillery.data.president.PresidentDAO;
+
+public class PresidentServlet extends HttpServlet {
+
+	private PresidentDAO presidentDAO;
+
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		try {
+			presidentDAO = new MockPresidentDAO();
+		}
+		catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		List <President> presidents = presidentDAO.getPresidents();
+		String searchString = "";
+		String party = req.getParameter("party");
+		if ( party != null && !party.equals("") ) {
+			List<President> pByParty = new ArrayList<>();
+			for (President p : presidents) {
+				if (p.getParty().equals(party)) {
+					pByParty.add(p);
+				}
+			}
+			
+			req.setAttribute("presidents", pByParty);
+			searchString = party;
+		}
+		String lastName = req.getParameter("lastName");
+		if (lastName != null && !lastName.equals("")) {
+			List<President> pByLastName = presidentDAO.findByLastName(party);
+			req.setAttribute("presidents", pByLastName);
+			searchString = lastName;
+		}
+		req.setAttribute("searchString", searchString);
+		req.getRequestDispatcher("/WEB-INF/presidents.jsp").forward(req, resp);
+
+	}
+}

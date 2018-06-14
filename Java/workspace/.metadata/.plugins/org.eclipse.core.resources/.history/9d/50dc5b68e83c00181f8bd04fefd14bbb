@@ -1,0 +1,13 @@
+package com.skilldistillery.daopattern.drills;
+
+import java.util.List;
+
+public class MockPresidentDAO implements PresidentDAO {
+
+	@Override
+	public List<President> getPresidents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

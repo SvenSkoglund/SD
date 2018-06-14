@@ -1,0 +1,32 @@
+package com.skilldistillery.data.president;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MockPresidentDAO implements PresidentDAO {
+	List<President> p = new ArrayList<President>();
+	@Override
+	public List<President> getPresidents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public President getPresidentByTermNumber(int number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<President> findByParty(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<President> findByLastName(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

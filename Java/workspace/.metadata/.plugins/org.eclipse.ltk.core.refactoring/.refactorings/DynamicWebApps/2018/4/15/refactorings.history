@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;LotteryApp/src&apos;&#x0A;- Original project: &apos;DynamicWebApps&apos;&#x0A;- Destination element: &apos;LotteryApp/src&apos;&#x0A;- Original elements:&#x0A;     DynamicWebApps/src/com.skilldistillery.lottery.powerball&#x0A;     DynamicWebApps/src/com.skilldistillery.lottery.common" description="Copy packages" destination="=LotteryApp/src" element1="/src&lt;com.skilldistillery.lottery.powerball" element2="/src&lt;com.skilldistillery.lottery.common" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1523294370859" version="1.0"/>
+</session>

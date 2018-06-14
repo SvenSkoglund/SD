@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="com.skilldistillery.rest.services.TodoService"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.support.SpringBootServletInitializer"/>
+<fullyQualifiedTypeName name="org.springframework.boot.builder.SpringApplicationBuilder"/>
+<fullyQualifiedTypeName name="org.springframework.security.authentication.encoding.PasswordEncoder"/>
+<fullyQualifiedTypeName name="javax.activation.DataSource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.skilldistillery.todoapp.entities.User"/>
+<fullyQualifiedTypeName name="java.security.Principal"/>
+</qualifiedTypeNameHistroy>

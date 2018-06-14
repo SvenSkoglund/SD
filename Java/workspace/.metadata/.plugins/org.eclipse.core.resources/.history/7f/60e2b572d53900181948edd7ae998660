@@ -1,0 +1,15 @@
+package com.skilldistillery.filmquery.entities;
+
+public class Film {
+	int id;
+	String title;
+	String description;
+	int releaseYear;
+	int languageID;
+	short rentalDuration;
+	double rentalRate;
+	short length;
+	double replacementCost;
+	rating = new Enum("G","PG","PG-13","R","NC-17");
+	String specialFeatures;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/RegularExpressionsJava/src/com/skilldistillery/regex/drills/Splitter.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<listAttribute key="org.eclipse.eclemma.core.SCOPE_IDS"/>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.skilldistillery.regex.drills.Splitter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=",?\t id,&#9;name&#9;color&#9;breed&#9;age&#9;gender&#9;comments&#10;2,&#9;Goliath,&#9;multicolor&#9;Saint Bernard&#9;8,&#9;Neutered Male&#9;Very friendly dog towards all! Slobbers non-stop.&#10;5&#9;Armando&#9;dark brown&#9;Chihuahua,&#9;3&#9;Male,&#9;Likes to ride in the car. Very ferocious little thing. Needs AA battery replacement every 6 months&#10;8&#9;Kyla&#9;White/Brown speckled,&#9;Mixed Terrier&#9;2,&#9;Female&#9;Likes walks, hates baths, will wake you up at 5 am every morning.&#10;11&#9;Bear,&#9;Yellow&#9;Labrador Retriever,&#9;5&#9;Male,&#9;Great swimmer! Has a tendency to take himself for walks. Needs more food than the average dog.&#10;15&#9;Lucky,&#9;Black &amp; White&#9;Dalmation,&#9;6&#9;Spayed Female,&#9;Has hip problems, due to surviving 8 car accidents."/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RegularExpressionsJava"/>
+</launchConfiguration>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.skilldisitllery.spring.lotto&apos; to &apos;com.skilldistillery.spring.lotto&apos;&#x0A;- Original project: &apos;SpringLottoWeb&apos;&#x0A;- Original element: &apos;SpringLottoWeb/src/com.skilldisitllery.spring.lotto&apos;&#x0A;- Renamed element: &apos;SpringLottoWeb/src/com.skilldistillery.spring.lotto&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;com.skilldisitllery.spring.lotto&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.skilldisitllery.spring.lotto" name="com.skilldistillery.spring.lotto" qualified="false" references="true" stamp="1523398560965" textual="true" version="1.0"/>
+</session>

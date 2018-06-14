@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/svenskogland/SD/Java/VideoStore/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3841324332.index
+1380061965.index
+1714484558.index
+747662997.index
+1909922249.index
+198737039.index

@@ -1,0 +1,55 @@
+package test;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.skilldistillery.data.president.MockPresidentDAO;
+import com.skilldistillery.data.president.President;
+import com.skilldistillery.data.president.PresidentDAO;
+
+public class PresidentTest {
+
+	PresidentDAO dao;
+
+	@Before
+	public void setUp() throws Exception {
+		dao = new MockPresidentDAO();
+
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		dao = null;
+	}
+
+	@Test
+	public void test_get_presidents_returns_list() {
+		List<President> p2 = new ArrayList<President>();
+		p2.add(new President(1, "sven", "richard", "Skoglund", 10, "got bored", "always"));
+		p2.add(new President(2, "Mark", "Joseph", "Coleman", 1, "drugs", "green"));
+		p2.add(new President(3, "John", "Bob", "Jones", 3, "sexual misconduct", "communist"));
+
+		assertEquals(p2, dao.getPresidents());
+		assertEquals(p2.get(0), dao.getPresidents().get(0));
+		assertEquals(p2.get(1), dao.getPresidents().get(1));
+		assertEquals(p2.get(2), dao.getPresidents().get(2));
+	}
+	public void test_get_presidents_by_term_number() {
+		List<President> p2 = new ArrayList<President>();
+		p2.add(new President(1, "sven", "richard", "Skoglund", 10, "got bored", "always"));
+		p2.add(new President(2, "Mark", "Joseph", "Coleman", 1, "drugs", "green"));
+		p2.add(new President(3, "John", "Bob", "Jones", 3, "sexual misconduct", "communist"));
+
+		assertEquals(p2, dao.getPresidents());
+		assertEquals(p2.get(0), dao.getPresidents().get(0));
+		assertEquals(p2.get(1), dao.getPresidents().get(1));
+		assertEquals(p2.get(2), dao.getPresidents().get(2));
+	}
+
+}

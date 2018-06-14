@@ -1,0 +1,1365 @@
+!SESSION 2018-05-24 10:52:49.274 -----------------------------------------------
+eclipse.buildId=3.9.3.201803200915-RELEASE-e47
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide -product org.springsource.sts.ide -product org.springsource.sts.ide -keyring /Users/svenskogland/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -product org.springsource.sts.ide -product org.springsource.sts.ide -product org.springsource.sts.ide -keyring /Users/svenskogland/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2018-05-24 10:52:58.929
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2018-05-24 10:53:36.146
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-05-24 10:53:36.147
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-05-24 10:53:36.147
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2018-05-24 10:53:39.181
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2018-05-24 10:53:39.223
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-05-24 10:53:39.234
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-05-24 10:53:39.909
+!MESSAGE The file resources/css/dark.css Could not be found in bundle org.eclipse.lsp4e
+
+!ENTRY org.eclipse.jface 2 0 2018-05-24 10:53:40.615
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-05-24 10:53:40.615
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51989b17,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12f52ca4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2018-05-24 10:53:42.923
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2018-05-24 10:53:42.923
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2018-05-24 10:53:42.924
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-24 10:53:44.139
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-24 10:53:44.139
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.buildship.core 4 0 2018-05-24 10:55:42.142
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 1
+Java Model Exception: Java Model Status [Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src']
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3390)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3352)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3405)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.updateSourceFolders(SourceFolderUpdater.java:72)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.update(SourceFolderUpdater.java:174)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProjectInTransaction(SynchronizeGradleBuildOperation.java:245)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$200(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$4.run(SynchronizeGradleBuildOperation.java:234)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProject(SynchronizeGradleBuildOperation.java:230)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeOpenWorkspaceProject(SynchronizeGradleBuildOperation.java:221)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeWorkspaceProject(SynchronizeGradleBuildOperation.java:186)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeGradleProjectWithWorkspaceProject(SynchronizeGradleBuildOperation.java:176)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$000(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$1.run(SynchronizeGradleBuildOperation.java:134)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:131)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:115)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:85)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-05-24 10:55:42.145
+!MESSAGE Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src'
+
+!ENTRY org.eclipse.buildship.core 4 0 2018-05-24 10:56:02.118
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 1
+Java Model Exception: Java Model Status [Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src']
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3390)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3352)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3405)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.updateSourceFolders(SourceFolderUpdater.java:72)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.update(SourceFolderUpdater.java:174)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProjectInTransaction(SynchronizeGradleBuildOperation.java:245)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$200(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$4.run(SynchronizeGradleBuildOperation.java:234)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProject(SynchronizeGradleBuildOperation.java:230)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeOpenWorkspaceProject(SynchronizeGradleBuildOperation.java:221)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeWorkspaceProject(SynchronizeGradleBuildOperation.java:186)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeGradleProjectWithWorkspaceProject(SynchronizeGradleBuildOperation.java:176)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$000(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$1.run(SynchronizeGradleBuildOperation.java:134)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:131)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:115)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:85)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-05-24 10:56:02.118
+!MESSAGE Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src'
+
+!ENTRY org.eclipse.buildship.core 4 0 2018-05-24 10:56:55.653
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 1
+Java Model Exception: Java Model Status [Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src']
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3390)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3352)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3405)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.updateSourceFolders(SourceFolderUpdater.java:72)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.update(SourceFolderUpdater.java:174)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProjectInTransaction(SynchronizeGradleBuildOperation.java:245)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$200(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$4.run(SynchronizeGradleBuildOperation.java:234)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProject(SynchronizeGradleBuildOperation.java:230)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeOpenWorkspaceProject(SynchronizeGradleBuildOperation.java:221)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeWorkspaceProject(SynchronizeGradleBuildOperation.java:186)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeGradleProjectWithWorkspaceProject(SynchronizeGradleBuildOperation.java:176)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$000(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$1.run(SynchronizeGradleBuildOperation.java:134)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:131)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:115)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:85)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-05-24 10:56:55.654
+!MESSAGE Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src'
+
+!ENTRY org.eclipse.buildship.core 2 0 2018-05-24 10:57:26.391
+!MESSAGE Synchronize Gradle projects with workspace failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not run build action using Gradle distribution 'https://services.gradle.org/distributions/gradle-4.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:41)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:57)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter.run(DefaultBuildActionExecuter.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.invokeRun(ConnectionAwareLauncherProxy.java:170)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.invoke(ConnectionAwareLauncherProxy.java:160)
+	at com.sun.proxy.$Proxy40.run(Unknown Source)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider$1.get(DefaultModelProvider.java:112)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider$3.call(DefaultModelProvider.java:142)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4724)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4721)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.getFromCache(DefaultModelProvider.java:153)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.executeOperation(DefaultModelProvider.java:138)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.executeBuildActionExecuter(DefaultModelProvider.java:108)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModels(DefaultModelProvider.java:78)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleProjects(DefaultModelProvider.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.fetchEclipseProjects(SynchronizeGradleBuildsJob.java:91)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:81)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Build file '/Users/svenskogland/SD/Java/toDoApp/TodoJPA/build.gradle' line: 52
+A problem occurred evaluating root project 'TodoJPA'.
+	at org.gradle.initialization.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:74)
+	at org.gradle.initialization.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:47)
+	at org.gradle.initialization.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:137)
+	at org.gradle.initialization.DefaultGradleLauncher.getConfiguredBuild(DefaultGradleLauncher.java:104)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:87)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:84)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.configure(GradleBuildController.java:84)
+	at org.gradle.tooling.internal.provider.runner.ClientProvidedBuildActionRunner.run(ClientProvidedBuildActionRunner.java:65)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:62)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:82)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:295)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'TodoJPA'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:92)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:209)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:77)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:214)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:61)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:58)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:41)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:64)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:110)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:656)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:135)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:60)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:38)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuild.run(DefaultGradleLauncher.java:249)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.configureBuild(DefaultGradleLauncher.java:167)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:126)
+	... 62 more
+Caused by: org.gradle.api.UnknownProjectException: Project with path ':JPAVideoStore' could not be found in root project 'TodoJPA'.
+	at org.gradle.api.internal.project.DefaultProject.project(DefaultProject.java:592)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:479)
+	at org.gradle.internal.metaobject.BeanDynamicObject.tryInvokeMethod(BeanDynamicObject.java:191)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.tryInvokeMethod(CompositeDynamicObject.java:98)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.tryInvokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.groovy.scripts.BasicScript$ScriptDynamicObject.tryInvokeMethod(BasicScript.java:134)
+	at org.gradle.internal.metaobject.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:80)
+	at build_cho2qtikppeamdkptpepdho5v$_run_closure4.doCall(/Users/svenskogland/SD/Java/toDoApp/TodoJPA/build.gradle:52)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:71)
+	at org.gradle.util.ConfigureUtil.configureTarget(ConfigureUtil.java:160)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:106)
+	at org.gradle.api.internal.project.DefaultProject.dependencies(DefaultProject.java:1151)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:479)
+	at org.gradle.internal.metaobject.BeanDynamicObject.tryInvokeMethod(BeanDynamicObject.java:191)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.tryInvokeMethod(CompositeDynamicObject.java:98)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.tryInvokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.groovy.scripts.BasicScript$ScriptDynamicObject.tryInvokeMethod(BasicScript.java:134)
+	at org.gradle.internal.metaobject.AbstractDynamicObject.invokeMethod(AbstractDynamicObject.java:160)
+	at org.gradle.groovy.scripts.BasicScript.invokeMethod(BasicScript.java:83)
+	at build_cho2qtikppeamdkptpepdho5v.run(/Users/svenskogland/SD/Java/toDoApp/TodoJPA/build.gradle:47)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:90)
+	... 94 more
+
+!ENTRY org.eclipse.buildship.core 2 0 2018-05-24 10:57:41.980
+!MESSAGE Synchronize Gradle projects with workspace failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not run build action using Gradle distribution 'https://services.gradle.org/distributions/gradle-4.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:41)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:57)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter.run(DefaultBuildActionExecuter.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.invokeRun(ConnectionAwareLauncherProxy.java:170)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.invoke(ConnectionAwareLauncherProxy.java:160)
+	at com.sun.proxy.$Proxy40.run(Unknown Source)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider$1.get(DefaultModelProvider.java:112)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider$3.call(DefaultModelProvider.java:142)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4724)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3522)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2315)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2193)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3932)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4721)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.getFromCache(DefaultModelProvider.java:153)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.executeOperation(DefaultModelProvider.java:138)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.executeBuildActionExecuter(DefaultModelProvider.java:108)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModels(DefaultModelProvider.java:78)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleProjects(DefaultModelProvider.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.fetchEclipseProjects(SynchronizeGradleBuildsJob.java:91)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:81)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Build file '/Users/svenskogland/SD/Java/toDoApp/TodoJPA/build.gradle' line: 52
+A problem occurred evaluating root project 'TodoJPA'.
+	at org.gradle.initialization.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:74)
+	at org.gradle.initialization.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:47)
+	at org.gradle.initialization.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:137)
+	at org.gradle.initialization.DefaultGradleLauncher.getConfiguredBuild(DefaultGradleLauncher.java:104)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:87)
+	at org.gradle.internal.invocation.GradleBuildController$2.call(GradleBuildController.java:84)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:152)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:100)
+	at org.gradle.internal.invocation.GradleBuildController.configure(GradleBuildController.java:84)
+	at org.gradle.tooling.internal.provider.runner.ClientProvidedBuildActionRunner.run(ClientProvidedBuildActionRunner.java:65)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$1.run(RunAsBuildOperationBuildActionRunner.java:43)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:40)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionRunner.run(SubscribableBuildActionRunner.java:51)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:47)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:39)
+	at org.gradle.launcher.exec.BuildTreeScopeBuildActionExecuter.execute(BuildTreeScopeBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:80)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:53)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:57)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:32)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:43)
+	at org.gradle.tooling.internal.provider.ParallelismConfigurationBuildActionExecuter.execute(ParallelismConfigurationBuildActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:29)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:45)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:30)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:62)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:82)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:122)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:295)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+Caused by: org.gradle.api.GradleScriptException: A problem occurred evaluating root project 'TodoJPA'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:92)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl$2.run(DefaultScriptPluginFactory.java:209)
+	at org.gradle.configuration.ProjectScriptTarget.addConfiguration(ProjectScriptTarget.java:77)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:214)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:61)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:58)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:41)
+	at org.gradle.configuration.project.BuildScriptProcessor.execute(BuildScriptProcessor.java:26)
+	at org.gradle.configuration.project.ConfigureActionsProjectEvaluator.evaluate(ConfigureActionsProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.doConfigure(LifecycleProjectEvaluator.java:64)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.access$100(LifecycleProjectEvaluator.java:34)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator$ConfigureProject.run(LifecycleProjectEvaluator.java:110)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.configuration.project.LifecycleProjectEvaluator.evaluate(LifecycleProjectEvaluator.java:50)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:656)
+	at org.gradle.api.internal.project.DefaultProject.evaluate(DefaultProject.java:135)
+	at org.gradle.execution.TaskPathProjectEvaluator.configure(TaskPathProjectEvaluator.java:35)
+	at org.gradle.execution.TaskPathProjectEvaluator.configureHierarchy(TaskPathProjectEvaluator.java:60)
+	at org.gradle.configuration.DefaultBuildConfigurer.configure(DefaultBuildConfigurer.java:38)
+	at org.gradle.initialization.DefaultGradleLauncher$ConfigureBuild.run(DefaultGradleLauncher.java:249)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:336)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor$RunnableBuildOperationWorker.execute(DefaultBuildOperationExecutor.java:328)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.execute(DefaultBuildOperationExecutor.java:199)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:110)
+	at org.gradle.initialization.DefaultGradleLauncher.configureBuild(DefaultGradleLauncher.java:167)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:126)
+	... 62 more
+Caused by: org.gradle.api.UnknownProjectException: Project with path ':JPAVideoStore' could not be found in root project 'TodoJPA'.
+	at org.gradle.api.internal.project.DefaultProject.project(DefaultProject.java:592)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:479)
+	at org.gradle.internal.metaobject.BeanDynamicObject.tryInvokeMethod(BeanDynamicObject.java:191)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.tryInvokeMethod(CompositeDynamicObject.java:98)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.tryInvokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.groovy.scripts.BasicScript$ScriptDynamicObject.tryInvokeMethod(BasicScript.java:134)
+	at org.gradle.internal.metaobject.ConfigureDelegate.invokeMethod(ConfigureDelegate.java:80)
+	at build_cho2qtikppeamdkptpepdho5v$_run_closure4.doCall(/Users/svenskogland/SD/Java/toDoApp/TodoJPA/build.gradle:52)
+	at org.gradle.api.internal.ClosureBackedAction.execute(ClosureBackedAction.java:71)
+	at org.gradle.util.ConfigureUtil.configureTarget(ConfigureUtil.java:160)
+	at org.gradle.util.ConfigureUtil.configure(ConfigureUtil.java:106)
+	at org.gradle.api.internal.project.DefaultProject.dependencies(DefaultProject.java:1151)
+	at org.gradle.internal.metaobject.BeanDynamicObject$MetaClassAdapter.invokeMethod(BeanDynamicObject.java:479)
+	at org.gradle.internal.metaobject.BeanDynamicObject.tryInvokeMethod(BeanDynamicObject.java:191)
+	at org.gradle.internal.metaobject.CompositeDynamicObject.tryInvokeMethod(CompositeDynamicObject.java:98)
+	at org.gradle.internal.metaobject.MixInClosurePropertiesAsMethodsDynamicObject.tryInvokeMethod(MixInClosurePropertiesAsMethodsDynamicObject.java:30)
+	at org.gradle.groovy.scripts.BasicScript$ScriptDynamicObject.tryInvokeMethod(BasicScript.java:134)
+	at org.gradle.internal.metaobject.AbstractDynamicObject.invokeMethod(AbstractDynamicObject.java:160)
+	at org.gradle.groovy.scripts.BasicScript.invokeMethod(BasicScript.java:83)
+	at build_cho2qtikppeamdkptpepdho5v.run(/Users/svenskogland/SD/Java/toDoApp/TodoJPA/build.gradle:47)
+	at org.gradle.groovy.scripts.internal.DefaultScriptRunnerFactory$ScriptRunnerImpl.run(DefaultScriptRunnerFactory.java:90)
+	... 94 more
+
+!ENTRY org.eclipse.buildship.core 4 0 2018-05-24 10:57:54.692
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 1
+Java Model Exception: Java Model Status [Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src']
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3390)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3352)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3405)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.updateSourceFolders(SourceFolderUpdater.java:72)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.update(SourceFolderUpdater.java:174)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProjectInTransaction(SynchronizeGradleBuildOperation.java:245)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$200(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$4.run(SynchronizeGradleBuildOperation.java:234)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProject(SynchronizeGradleBuildOperation.java:230)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeOpenWorkspaceProject(SynchronizeGradleBuildOperation.java:221)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeWorkspaceProject(SynchronizeGradleBuildOperation.java:186)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeGradleProjectWithWorkspaceProject(SynchronizeGradleBuildOperation.java:176)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$000(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$1.run(SynchronizeGradleBuildOperation.java:134)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:131)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:115)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:85)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-05-24 10:57:54.692
+!MESSAGE Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src'
+
+!ENTRY org.eclipse.buildship.core 4 0 2018-05-24 10:59:10.069
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 1
+Java Model Exception: Java Model Status [Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src']
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3390)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3352)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3405)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.updateSourceFolders(SourceFolderUpdater.java:72)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.update(SourceFolderUpdater.java:174)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProjectInTransaction(SynchronizeGradleBuildOperation.java:245)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$200(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$4.run(SynchronizeGradleBuildOperation.java:234)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProject(SynchronizeGradleBuildOperation.java:230)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeOpenWorkspaceProject(SynchronizeGradleBuildOperation.java:221)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeWorkspaceProject(SynchronizeGradleBuildOperation.java:186)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeGradleProjectWithWorkspaceProject(SynchronizeGradleBuildOperation.java:176)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$000(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$1.run(SynchronizeGradleBuildOperation.java:134)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:131)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:115)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:85)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-05-24 10:59:10.069
+!MESSAGE Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src'
+
+!ENTRY org.eclipse.buildship.core 4 0 2018-05-24 11:00:25.962
+!MESSAGE Synchronize Gradle projects with workspace failed due to an unexpected error.
+!STACK 1
+Java Model Exception: Java Model Status [Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src']
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3390)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3352)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3405)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.updateSourceFolders(SourceFolderUpdater.java:72)
+	at org.eclipse.buildship.core.workspace.internal.SourceFolderUpdater.update(SourceFolderUpdater.java:174)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProjectInTransaction(SynchronizeGradleBuildOperation.java:245)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$200(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$4.run(SynchronizeGradleBuildOperation.java:234)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5660)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5617)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeJavaProject(SynchronizeGradleBuildOperation.java:230)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeOpenWorkspaceProject(SynchronizeGradleBuildOperation.java:221)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeWorkspaceProject(SynchronizeGradleBuildOperation.java:186)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeGradleProjectWithWorkspaceProject(SynchronizeGradleBuildOperation.java:176)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.access$000(SynchronizeGradleBuildOperation.java:99)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation$1.run(SynchronizeGradleBuildOperation.java:134)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.synchronizeProjectsWithWorkspace(SynchronizeGradleBuildOperation.java:131)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildOperation.run(SynchronizeGradleBuildOperation.java:115)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.synchronizeBuild(SynchronizeGradleBuildsJob.java:85)
+	at org.eclipse.buildship.core.workspace.internal.SynchronizeGradleBuildsJob.runToolingApiJob(SynchronizeGradleBuildsJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob$1.run(ToolingApiJob.java:73)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:62)
+	at org.eclipse.buildship.core.util.progress.ToolingApiJob.run(ToolingApiJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.jdt.core 4 964 2018-05-24 11:00:25.962
+!MESSAGE Cannot nest 'TodoJPA/src/main/java' inside 'TodoJPA/src'. To enable the nesting exclude 'main/' from 'TodoJPA/src'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-24 11:07:55.310
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-05-24 11:07:55.312
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2018-05-24 11:09:47.272
+!MESSAGE Failed to resolve selection in ‘=TodoJPA/src\/main\/java<com.skilldistillery.todoapp.entities{User.java’ at offset 420.
+!STACK 1
+Java Model Exception: Java Model Status [Index out of bounds]
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:158)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:378)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect_aroundBody0(CompilationUnit.java:372)
+	at org.eclipse.jdt.internal.core.CompilationUnit$AjcClosure1.run(CompilationUnit.java:1)
+	at org.eclipse.contribution.jdt.itdawareness.ITDAwarenessAspect.ajc$around$org_eclipse_contribution_jdt_itdawareness_ITDAwarenessAspect$6$3f3ffce8proceed(ITDAwarenessAspect.aj:311)
+	at org.eclipse.contribution.jdt.itdawareness.ITDAwarenessAspect.ajc$around$org_eclipse_contribution_jdt_itdawareness_ITDAwarenessAspect$6$3f3ffce8(ITDAwarenessAspect.aj:312)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:372)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:138)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2018-05-24 11:09:47.273
+!MESSAGE Index out of bounds
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-05-24 11:25:05.658
+!MESSAGE No repository found at http://download.eclipse.org/usssdk/drops/nightly/N586.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-05-24 11:54:35.388
+!MESSAGE Connection to https://spring.io/blog.atom failed on spring.io: nodename nor servname provided, or not known. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: spring.io: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-05-24 11:54:40.085
+!MESSAGE Connection to http://dist.springsource.com/release/STS/doc/updates.xml failed on dist.springsource.com: nodename nor servname provided, or not known. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: dist.springsource.com: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-24 13:58:52.902
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Widget has the wrong parent
+	at org.eclipse.swt.SWT.error(SWT.java:4514)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:800)
+	at org.eclipse.swt.widgets.MenuItem.setMenu(MenuItem.java:749)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$9(ActionContributionItem.java:1311)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4034)
+	at org.eclipse.swt.widgets.Display.observerProc(Display.java:3614)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5149)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5531)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4159)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3692)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 0 2018-05-24 14:00:51.552
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Widget has the wrong parent
+	at org.eclipse.swt.SWT.error(SWT.java:4514)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:800)
+	at org.eclipse.swt.widgets.MenuItem.setMenu(MenuItem.java:749)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$9(ActionContributionItem.java:1311)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4034)
+	at org.eclipse.swt.widgets.Display.observerProc(Display.java:3614)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5149)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5531)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4159)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3692)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1039)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY net.resheim.eclipse.launcher.core 1 0 2018-05-26 07:36:04.034
+!MESSAGE Launching new Eclipse instance with "open -n /Applications/STS.app --args -vm /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/server/libjvm.dylib -os macosx -ws cocoa -arch x86_64 -showsplash -launcher /Applications/STS.app/Contents/MacOS/STS -name STS --launcher.library /Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.551.v20171108-1834/eclipse_1630.so -startup /Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar --launcher.overrideVmargs -product org.springsource.sts.ide -launcher /Applications/STS.app/Contents/MacOS/STS -product org.springsource.sts.ide -launcher /Applications/STS.app/Contents/MacOS/STS -product org.springsource.sts.ide -launcher /Applications/STS.app/Contents/MacOS/STS -product org.springsource.sts.ide -keyring /Users/svenskogland/.eclipse_keyring -data /Users/svenskogland/SD/Java/EventPlanner -vmargs -Dosgi.requiredJavaVersion=1.8 -Xms40m -Dosgi.module.lock.timeout=10 -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns -Xmx1200m -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar "
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-05-29 08:26:56.072
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 0 2018-05-29 16:27:00.963
+!MESSAGE Unexpected error loading extension: org.eclipse.equinox.p2.metadata.repository.simpleRepository
+!STACK 0
+org.eclipse.oomph.util.IORuntimeException: java.io.FileNotFoundException: /Users/svenskogland/.eclipse/org.eclipse.oomph.p2/cache/http___downloads.genuitec.com_downloads_products_webclipse_updates_wc2017ci12a_content.jar (No such file or directory)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:235)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:255)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:402)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:259)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:66)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:88)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor256.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:246)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.io.FileNotFoundException: /Users/svenskogland/.eclipse/org.eclipse.oomph.p2/cache/http___downloads.genuitec.com_downloads_products_webclipse_updates_wc2017ci12a_content.jar (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.download(CachingTransport.java:204)
+	... 18 more
+
+!ENTRY com.genuitec.eclipse.webclipse.evergreen 4 0 2018-05-29 16:27:02.955
+!MESSAGE Failed to access metadata repository under http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci12a
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci12a.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:353)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:244)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.EvergreenUpdateProcess.run(EvergreenUpdateProcess.java:246)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-05-29 16:27:02.955
+!MESSAGE No repository found at http://downloads.genuitec.com/downloads/products/webclipse/updates/wc2017ci12a.
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-05-30 08:59:54.836
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY net.resheim.eclipse.launcher.core 1 0 2018-05-31 08:40:10.762
+!MESSAGE Launching new Eclipse instance with "open -n /Applications/STS.app --args -vm /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/server/libjvm.dylib -os macosx -ws cocoa -arch x86_64 -showsplash -launcher /Applications/STS.app/Contents/MacOS/STS -name STS --launcher.library /Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.551.v20171108-1834/eclipse_1630.so -startup /Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar --launcher.overrideVmargs -product org.springsource.sts.ide -launcher /Applications/STS.app/Contents/MacOS/STS -product org.springsource.sts.ide -launcher /Applications/STS.app/Contents/MacOS/STS -product org.springsource.sts.ide -launcher /Applications/STS.app/Contents/MacOS/STS -product org.springsource.sts.ide -keyring /Users/svenskogland/.eclipse_keyring -vmargs -Dosgi.requiredJavaVersion=1.8 -Xms40m -Dosgi.module.lock.timeout=10 -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts -Xdock:icon=../Resources/sts.icns -Xmx1200m -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar -Djava.class.path=/Applications/STS.app/Contents/MacOS//../Eclipse/plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar "
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-01 10:14:07.227
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-02 12:18:43.917
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-03 20:03:49.466
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-03 20:03:50.889
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-04 22:41:48.973
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-04 22:41:49.194
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-05 06:07:57.714
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-05 08:34:10.893
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-05 23:34:32.124
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-06 09:26:28.731
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-06 09:56:32.021
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2018-06-07 06:29:07.284
+!MESSAGE Exception saving preferences to: /Applications/STS.app/Contents/Eclipse/configuration/.settings/com.genuitec.eclipse.monitor.prefs.
+!STACK 0
+java.io.FileNotFoundException: /Applications/STS.app/Contents/Eclipse/configuration/.settings/com.genuitec.eclipse.monitor.prefs.bak (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.copy(SafeFileOutputStream.java:92)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.<init>(SafeFileOutputStream.java:52)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:279)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1076)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1052)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at com.genuitec.eclipse.monitor.internal.providers.WebclipseMetricsProvider.recordIdeUsed(WebclipseMetricsProvider.java:158)
+	at com.genuitec.eclipse.monitor.internal.providers.WebclipseMetricsProvider.access$1(WebclipseMetricsProvider.java:132)
+	at com.genuitec.eclipse.monitor.internal.providers.WebclipseMetricsProvider$1.run(WebclipseMetricsProvider.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-07 06:29:07.642
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-07 06:29:07.959
+!MESSAGE Exception saving preferences to: /Applications/STS.app/Contents/Eclipse/configuration/.settings/com.genuitec.eclipse.monitor.prefs.
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: /Applications/STS.app/Contents/Eclipse/configuration/.settings/com.genuitec.eclipse.monitor.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:285)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1076)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1052)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:431)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at com.genuitec.eclipse.monitor.internal.providers.WebclipseMetricsProvider.recordIdeUsed(WebclipseMetricsProvider.java:158)
+	at com.genuitec.eclipse.monitor.internal.providers.WebclipseMetricsProvider.access$1(WebclipseMetricsProvider.java:132)
+	at com.genuitec.eclipse.monitor.internal.providers.WebclipseMetricsProvider$1.run(WebclipseMetricsProvider.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.io.FileNotFoundException: /Applications/STS.app/Contents/Eclipse/configuration/.settings/com.genuitec.eclipse.monitor.prefs.bak (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.copy(SafeFileOutputStream.java:92)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.<init>(SafeFileOutputStream.java:52)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:279)
+	... 8 more
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-07 10:04:44.401
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-08 19:23:57.175
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-08 19:23:57.737
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-08 19:53:58.454
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-11 09:50:56.257
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-11 09:50:57.130
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2018-06-12 10:15:20.879
+!MESSAGE www.genuitec.com
+!STACK 0
+java.net.UnknownHostException: www.genuitec.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:347)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
+	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-12 10:15:23.611
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-12 10:45:24.670
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY com.genuitec.eclipse.monitor 4 0 2018-06-13 11:20:25.804
+!MESSAGE Empty file
+!STACK 0
+java.io.IOException: Empty file
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.loadDates(ReadOnlyFileRecord.java:49)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ReadOnlyFileRecord.refresh(ReadOnlyFileRecord.java:82)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.rescanWorkingLocation(ClientMetricsCollector.java:338)
+	at com.genuitec.eclipse.monitor.internal.collector.client.ClientMetricsCollector.getRootNode(ClientMetricsCollector.java:268)
+	at com.genuitec.eclipse.monitor.internal.MetricsManager.getRootNode(MetricsManager.java:251)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.getMetrics(ServerMetricsCollector.java:428)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.manageUpload(ServerMetricsCollector.java:491)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector.access$6(ServerMetricsCollector.java:489)
+	at com.genuitec.eclipse.monitor.internal.collector.server.ServerMetricsCollector$PeriodicSaveJob.run(ServerMetricsCollector.java:873)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)

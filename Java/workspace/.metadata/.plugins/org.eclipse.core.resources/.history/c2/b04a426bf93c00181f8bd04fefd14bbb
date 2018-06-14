@@ -1,0 +1,32 @@
+package test;
+
+import static org.junit.Assert.fail;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.skilldistillery.data.president.MockPresidentDAO;
+import com.skilldistillery.data.president.PresidentDAO;
+
+public class PresidentTest {
+
+	PresidentDAO dao;
+
+	@Before
+	public void setUp() throws Exception {
+		dao = new MockPresidentDAO();
+
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		dao = null;
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

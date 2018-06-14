@@ -1,0 +1,50 @@
+package com.skilldistillery.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class NameServlet extends HttpServlet {
+	String[] firstNames = { "Stacie", "Youlanda", "Loma", "Jeri", "Erin", "Damon", "Marielle", "India", "America",
+			"Quinn", "Vallie", "Shalon", "Alonzo", "Ruthie", "Lindsey", "Richard", "Dorthy", "Devona", "Judi",
+			"Caterina", "Rossana", "Aracely", "Clara", "Ebonie", "Sindy", "Stephnie", "Blythe", "Lakendra", "Marget",
+			"Tommy" };
+
+	String[] lastNames = { "Anderson", "Weber", "Holt", "Dennis", "Gentry", "Levy", "Roy", "Arellano", "Molina",
+			"Simon", "Salazar", "Heath", "Haley", "Williams", "Graves", "Malone", "Thomas", "Farley", "Young", "Bryant",
+			"Keith", "Clayton", "Warren", "Hartman", "Daugherty", "Grimes", "Hall", "Medina", "Patrick", "Salinas" };
+
+	ArrayList<String> listFirstNames = new ArrayList<>();
+	ArrayList<String> listLastNames = new ArrayList<>();
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		for (String firstName : firstNames) {
+			listFirstNames.add(firstName);
+		}
+		for (String lastName : lastNames) {
+			listFirstNames.add(lastName);
+		}
+		String returnFirst = listFirstNames.get((int) (Math.random()*listFirstNames.size()));
+		String returnLast = listLastNames.get((int) (Math.random()*listLastNames.size()));
+
+		PrintWriter pw = resp.getWriter();
+		pw.println("<html><head><title>Name Generator</title></head>");
+		pw.println("<body>");
+		pw.println("<h1>Your name is:<h1/><br>");
+		pw.println("<p><strong>" + returnFirst + " " + returnLast + "</strong></p>");
+		pw.println("</body></html>");
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		this.doPost(req, resp);
+	}
+
+}

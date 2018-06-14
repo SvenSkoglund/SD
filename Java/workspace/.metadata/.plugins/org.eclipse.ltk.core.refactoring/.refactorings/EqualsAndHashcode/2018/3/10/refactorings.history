@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;myObject&apos; in &apos;com.skilldistillery.equalsandhashcode.drills.NamedObject.equals(...)&apos; to &apos;comparedObject&apos;&#x0A;- Original project: &apos;EqualsAndHashcode&apos;&#x0A;- Original element: &apos;com.skilldistillery.equalsandhashcode.drills.NamedObject.equals(Object).myObject&apos;&#x0A;- Renamed element: &apos;myObject&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;myObject&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.skilldistillery.equalsandhashcode.drills{NamedObject.java[NamedObject~equals~QObject;@myObject!429!472!441!448!QNamedObject;!0!false" name="comparedObject" references="true" stamp="1520619524395" version="1.0"/>
+</session>

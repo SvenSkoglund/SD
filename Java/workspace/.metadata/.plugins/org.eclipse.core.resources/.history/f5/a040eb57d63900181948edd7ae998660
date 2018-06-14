@@ -1,0 +1,17 @@
+package com.skilldistillery.filmquery.entities;
+
+import java.util.Set;
+
+public class Film {
+	int id;
+	String title;
+	String description;
+	int releaseYear;
+	int languageID;
+	short rentalDuration;
+	double rentalRate;
+	short length;
+	double replacementCost;
+	Rating rating;
+	Set specialFeatures;
+}

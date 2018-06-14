@@ -1,0 +1,21 @@
+package com.skilldistillery.presidents.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Conditional;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.skilldistillery.states.data.StateDAO;
+
+@Controller
+public class PresidentController {
+	@Autowired
+	StateDAO dao;
+	
+	@RequestMapping("President.do")
+	public ModelAndView president(String term) {
+		ModelAndView mv = new ModelAndView();
+		
+	}
+}

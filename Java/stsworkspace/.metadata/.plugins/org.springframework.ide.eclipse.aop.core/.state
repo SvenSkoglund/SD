@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Session"/>
+<aop-project name="ValidationLab"/>
+<aop-project name="MVCFilmSite"/>
+<aop-project name="HelloSTS"/>
+<aop-project name="SpringSession"/>
+<aop-project name="LoginSite"/>
+<aop-project name="USStatesSession"/>
+<aop-project name="USStatesSpringSession"/>
+<aop-project name="USStatesSessionSolution"/>
+<aop-project name="MyProject2"/>
+<aop-project name="AdvancedValidationLabSolution"/>
+<aop-project name="ValidationLabSolution"/>
+<aop-project name="UnitTestingSpringMVC"/>
+<aop-project name="AdvancedValidationLab"/>
+</aop-reference-model>

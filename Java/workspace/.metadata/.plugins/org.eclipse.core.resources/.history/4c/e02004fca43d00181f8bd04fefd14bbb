@@ -1,0 +1,9 @@
+package com.skilldistillery.states.data;
+
+public interface StateDAO {
+  public static State getStateByName(String name) {
+	// TODO Auto-generated method stub
+	return null;
+}
+  public State getStateByAbbreviation(String abbreviation);
+}

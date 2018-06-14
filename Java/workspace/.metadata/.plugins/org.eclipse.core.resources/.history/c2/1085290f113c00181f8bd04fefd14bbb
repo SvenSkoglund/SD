@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+</head>
+<body>
+
+<a href="hello">Access Hello Servlet</a>
+<br >
+
+<a href="inventory">List Inventory</a>
+
+</body>
+</html>

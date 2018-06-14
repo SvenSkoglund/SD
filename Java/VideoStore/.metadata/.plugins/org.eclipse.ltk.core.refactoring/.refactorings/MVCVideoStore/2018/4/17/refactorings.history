@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MVCVideoStore/WebContent/WEB-INF/VideoStore-servlet.xml&apos; to &apos;ideas-servlet.xml&apos;" description="Rename resource &apos;VideoStore-servlet.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/VideoStore-servlet.xml" name="ideas-servlet.xml" stamp="1524771404344" updateReferences="true"/>
+</session>

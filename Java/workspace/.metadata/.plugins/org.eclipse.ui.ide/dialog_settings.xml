@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="378" key="DIALOG_HEIGHT"/>
+		<item value="379" key="DIALOG_X_ORIGIN"/>
+		<item value="125" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/svenskogland/SD/Java/AdvancedRequestHandling.zip"/>
+			<item value="/Users/svenskogland/SD/Java/SpringMVC.zip"/>
+			<item value="/Users/svenskogland/SD/Java/DAOPatternPresidents.zip"/>
+			<item value="/Users/svenskogland/SD/Java/javaWeb.zip"/>
+			<item value="/Users/svenskogland/SD/Java/FilmQuery.zip"/>
+			<item value="/Users/svenskogland/SD/Java/SqlJdbc.zip"/>
+			<item value="/Users/svenskogland/SD/Java/OCPInterfaces.zip"/>
+			<item value="/Users/svenskogland/SD/Java/SubclassInitialization.zip"/>
+			<item value="/Users/svenskogland/SD/Java/AdvancedLooping.zip"/>
+			<item value="/Users/svenskogland/SD/Java/LambdaQuiz.zip"/>
+			<item value="/Users/svenskogland/Downloads/History.zip"/>
+			<item value="/Users/svenskogland/Downloads/RomanNumerals.zip"/>
+			<item value="/Users/svenskogland/SD/Java/History.zip"/>
+			<item value="/Users/svenskogland/Downloads/PigLatin.zip"/>
+			<item value="/Users/svenskogland/Downloads/Declaration.zip"/>
+			<item value="/Users/svenskogland/SD/Java/WhiteRabbit.zip"/>
+			<item value="/Users/svenskogland/SD/Java/java2.zip"/>
+			<item value="/Users/svenskogland/Downloads/TrumpSimulator.zip"/>
+			<item value="/Users/svenskogland/SD/Java/CaesarsCipher.zip"/>
+			<item value="/Users/svenskogland/SD/AnimalSanctuaryZip.zip"/>
+		</list>
+	</section>
+	<section name="DialogMarkerPropertiesDialogSettings">
+		<item value="702" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="250" key="DIALOG_HEIGHT"/>
+		<item value="228" key="DIALOG_X_ORIGIN"/>
+		<item value="188" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode/&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|.AppleSystemUIFont|13.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="279" key="DIALOG_X_ORIGIN"/>
+			<item value="21" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="613" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|13.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="554" key="DIALOG_HEIGHT"/>
+		<item value="654" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

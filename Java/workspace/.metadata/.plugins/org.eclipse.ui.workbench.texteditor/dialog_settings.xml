@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="366" key="DIALOG_X_ORIGIN"/>
+		<item value="258" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="equals"/>
+			<item value="="/>
+			<item value="/n"/>
+			<item value="i"/>
+			<item value=" "/>
+			<item value="FirstName"/>
+			<item value="firstname"/>
+			<item value="reason"/>
+			<item value="filter"/>
+			<item value="format"/>
+			<item value="sort"/>
+			<item value="//&#x09;&#x09;Write a program that uses Math.random() to build List of 10 integers between 10 and 100 (inclusive)."/>
+			<item value="speed"/>
+			<item value="protected"/>
+			<item value="X"/>
+		</list>
+		<list key="replacehistory">
+			<item value=":"/>
+			<item value="\n"/>
+			<item value="d"/>
+			<item value=""/>
+			<item value="Range"/>
+			<item value="private"/>
+			<item value="O"/>
+			<item value="*"/>
+			<item value="remainder"/>
+			<item value="ceiling"/>
+			<item value="scores"/>
+			<item value="myFirstCar"/>
+			<item value="purple"/>
+			<item value="4"/>
+			<item value="purple4"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="312" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|13.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="427" key="DIALOG_HEIGHT"/>
+		<item value="968" key="DIALOG_X_ORIGIN"/>
+		<item value="30" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,11 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/AdvancedValidationLab/WebContent/WEB-INF/authentication-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/AdvancedValidationLab/src/test/java/com/skilldistillery/controllers/LoginControllerTests-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/HelloSTS/WebContent/WEB-INF/hello-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/LoginSite/WebContent/WEB-INF/login-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/USStatesSpringSession/WebContent/WEB-INF/States-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/UnitTestingSpringMVC/src/test/java/com/skilldistillery/unittesting/controllers/info/InfoControllerTests-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ValidationLab/WebContent/WEB-INF/authentication-servlet.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ValidationLab/src/test/java/com/skilldistillery/controllers/LoginControllerTests-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/ValidationLab/src/test/java/com/skilldistillery/controllers/RegistrationControllerTests-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<activePage index\="0"/>
+com.springsource.config.ui.prefs.tabs.dialog=always
+eclipse.preferences.version=1

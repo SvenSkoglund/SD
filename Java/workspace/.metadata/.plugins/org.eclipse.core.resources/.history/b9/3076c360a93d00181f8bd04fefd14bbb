@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>States</title>
+</head>
+<body>
+<a href="nameForm.html" style="border: 2px solid blue; background: lightgrey">Get State By Name</a><br/>
+<br>
+<a href="abbrevForm.html" tyle="border: 2px solid blue; background: lightgrey">Get State By Abbreviation</a><br/>
+</body>
+</html>

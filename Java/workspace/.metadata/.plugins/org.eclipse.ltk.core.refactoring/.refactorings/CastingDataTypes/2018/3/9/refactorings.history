@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Floors.java&apos; to &apos;CastingDataTypes/src/com.skilldistillery.casting.labs&apos;&#x0A;- Original project: &apos;CastingDataTypes&apos;&#x0A;- Destination element: &apos;CastingDataTypes/src/com.skilldistillery.casting.labs&apos;&#x0A;- Original element: &apos;com.skilldistillery.casting.labs.Floors.java&apos;" description="Copy compilation unit" destination="/src&lt;com.skilldistillery.casting.labs" element1="/src&lt;com.skilldistillery.casting.labs{Floors.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1520027782746" units="1" version="1.0"/>
+</session>

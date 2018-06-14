@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>States</title>
+</head>
+<body>
+	<h3>States</h3>
+	<form action="President.do" method="GET">
+		Abbreviation:
+		<input type="text" name="term" size="4"/> 
+		<input type="submit" value="Enter term number"style="background-color: lightgreen" />
+	</form>
+</body>
+</html>

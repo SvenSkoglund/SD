@@ -1,0 +1,6 @@
+package data;
+
+public interface StateDAO {
+  public President getStateByName(String name);
+  public President getStateByAbbreviation(String abbreviation);
+}

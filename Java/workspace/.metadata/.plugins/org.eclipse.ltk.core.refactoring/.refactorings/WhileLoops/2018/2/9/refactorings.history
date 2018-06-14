@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;labs.RemoteControl&apos; to &apos;RemoteControlLoop&apos;&#x0A;- Original project: &apos;WhileLoops&apos;&#x0A;- Original element: &apos;labs.RemoteControl&apos;&#x0A;- Renamed element: &apos;labs.RemoteControlLoop&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RemoteControl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;labs{RemoteControl.java[RemoteControl" matchStrategy="1" name="RemoteControlLoop" qualified="false" references="true" similarDeclarations="false" stamp="1519777678226" textual="false" version="1.0"/>
+</session>

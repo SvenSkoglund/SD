@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.skilldisitllery.spring.lotto&apos; to &apos;SpringLottoWeb/src&apos;&#x0A;- Original project: &apos;IntroSpringMVC&apos;&#x0A;- Destination element: &apos;SpringLottoWeb/src&apos;&#x0A;- Original element: &apos;IntroSpringMVC/src/com.skilldisitllery.spring.lotto&apos;" description="Copy package" destination="=SpringLottoWeb/src" element1="/src&lt;com.skilldisitllery.spring.lotto" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1523398447157" version="1.0"/>
+</session>
